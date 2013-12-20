@@ -11,7 +11,7 @@
         
         <Rule>
           <Title>canchas_de_futbol</Title>
-          <!--<!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->-->
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
