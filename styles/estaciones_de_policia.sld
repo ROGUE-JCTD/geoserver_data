@@ -11,7 +11,7 @@
         
         <Rule>
           <Title>estaciones_de_policia</Title>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>

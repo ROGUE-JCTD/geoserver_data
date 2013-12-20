@@ -17,7 +17,7 @@
                 <Literal>hospital</Literal>
               </PropertyIsEqualTo>
           </Filter>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -37,7 +37,7 @@
                   <Literal>clinica</Literal>
                 </PropertyIsEqualTo>
             </Filter>
-            <MaxScaleDenominator>250000</MaxScaleDenominator>
+            <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
              <PointSymbolizer>
                <Graphic>
                  <ExternalGraphic>
@@ -73,7 +73,7 @@
               </And>
             </Or>
           </Filter>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>

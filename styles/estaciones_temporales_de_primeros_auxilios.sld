@@ -23,7 +23,7 @@
               </PropertyIsNotEqualTo>
               </And>
             </Filter>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -43,7 +43,7 @@
                 <Literal>si</Literal>
               </PropertyIsEqualTo>
             </Filter>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -75,7 +75,7 @@
                   </PropertyIsNotEqualTo>
               </And>
             </Filter>
-            <MaxScaleDenominator>250000</MaxScaleDenominator>
+            <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
              <PointSymbolizer>
                <Graphic>
                  <ExternalGraphic>
@@ -121,7 +121,7 @@
               </PropertyIsNotEqualTo>
             </And>
           </Filter>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>

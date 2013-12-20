@@ -11,7 +11,7 @@
         
         <Rule>
           <Title>zonas_de_aterrizaje_de_helicopteros</Title>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>

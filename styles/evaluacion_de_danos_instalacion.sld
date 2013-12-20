@@ -11,7 +11,7 @@
         
         <Rule>
           <Title>evaluacion_de_danos_instalacion</Title>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>

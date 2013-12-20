@@ -17,7 +17,7 @@
               <Literal>nino_perdido</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -37,7 +37,7 @@
               <Literal>accidente_ambulancia</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -57,7 +57,7 @@
               <Literal>incidente_de_trafico</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -77,7 +77,7 @@
               <Literal>danos_y_perjuicios</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -97,7 +97,7 @@
               <Literal>otro</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -144,7 +144,7 @@
               </And>
             </Or>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
+          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
