@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+        <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+<xsd:complexType name="MiembrosType">
+<xsd:complexContent>
+<xsd:extension base="gml:AbstractFeatureType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="fecha_hora" nillable="true" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="regional" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="I"/>
+				<xsd:enumeration value="II"/>
+				<xsd:enumeration value="III"/>
+				<xsd:enumeration value="IV"/>
+				<xsd:enumeration value="V"/>
+				<xsd:enumeration value="VI"/>
+				<xsd:enumeration value="O_Central"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="miembros" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="CODEL"/>
+				<xsd:enumeration value="CODEM"/>
+				<xsd:enumeration value="COPECO"/>
+				<xsd:enumeration value="Cruz_Roja"/>
+				<xsd:enumeration value="Cruz_Verde"/>
+				<xsd:enumeration value="ENEE"/>
+				<xsd:enumeration value="FFAA"/>
+				<xsd:enumeration value="FTC-Bravo"/>
+				<xsd:enumeration value="Hondutel"/>
+				<xsd:enumeration value="ICF"/>
+				<xsd:enumeration value="policia_nl"/>
+				<xsd:enumeration value="SAG"/>
+				<xsd:enumeration value="SANAA"/>
+				<xsd:enumeration value="SOPTRAVI"/>
+				<xsd:enumeration value="Sec_Salud"/>
+				<xsd:enumeration value="acceso_ter"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="contacto" nillible="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="telefono" nillible="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="departamen" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Atlantida"/>
+				<xsd:enumeration value="Choluteca"/>
+				<xsd:enumeration value="Colon"/>
+				<xsd:enumeration value="Comayagua"/>
+				<xsd:enumeration value="Copan"/>
+				<xsd:enumeration value="Cortes"/>
+				<xsd:enumeration value="El_Paraiso"/>
+				<xsd:enumeration value="Franciso_Morazan"/>
+				<xsd:enumeration value="Gracias_a_Dios"/>
+				<xsd:enumeration value="Intibuca"/>
+				<xsd:enumeration value="Islas_de_La_Bahia"/>
+				<xsd:enumeration value="La_Paz"/>
+				<xsd:enumeration value="Lempira"/>
+				<xsd:enumeration value="Ocotepeque"/>
+				<xsd:enumeration value="Olancho"/>
+				<xsd:enumeration value="Santa_Barbara"/>
+				<xsd:enumeration value="Valle"/>
+				<xsd:enumeration value="Yoro"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="municipio" nillible="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="institucio" nillible="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="direccion" nillible="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="informacio" nillible="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>

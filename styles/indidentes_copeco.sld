@@ -10,101 +10,614 @@
       <FeatureTypeStyle>
         
         <Rule>
-          <Title>Nino perdido</Title>
+          <Title>Finalizado</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <PropertyIsEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsEqualTo>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                <Fill>
+                  <CssParameter name="fill">#be24c9</CssParameter>
+                </Fill>
+              </Mark>
+              <Size>6</Size>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+      <!-- Nino perdido, prioridad alto -->
+        <Rule>
+          <Title>Nino perdido, prioridad alto</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>nino_perdido</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>alto</Literal>
+            </PropertyIsEqualTo>  
+            </And>
           </Filter>
-          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/people_missing_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#dc1515</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
               <Size>25</Size>
             </Graphic>
-          </PointSymbolizer>
+          </PointSymbolizer>         
         </Rule>
         
+        <!-- Nino perdido, prioridad medio -->
         <Rule>
-          <Title>Accidente ambulancia</Title>
+          <Title>Nino perdido, prioridad medio</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
-              <Literal>accidente_ambulancia</Literal>
+              <Literal>nino_perdido</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>medio</Literal>
+            </PropertyIsEqualTo>  
+            </And>
           </Filter>
-          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/security_ambulance_incident_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-              <Size>20</Size>
             </Graphic>
           </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#ddca1a</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>         
         </Rule>
         
+        <!-- Nino perdido, prioridad bajo -->
         <Rule>
-          <Title>Incidente de trafico</Title>
+          <Title>Nino perdido, prioridad bajo</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>nino_perdido</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>bajo</Literal>
+            </PropertyIsEqualTo>  
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#1ada27</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>         
+        </Rule>
+        
+        <!-- Nino perdido, prioridad incognita -->
+        <Rule>
+          <Title>Nino perdido, prioridad incognita</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>nino_perdido</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>      
+        </Rule>
+        
+        <!-- incidente de trafico, prioridad alto -->
+        <Rule>
+          <Title>Incidente de trafico, prioridad alto</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>incidente_de_trafico</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>alto</Literal>
+            </PropertyIsEqualTo>
+            </And>
           </Filter>
-          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/security_carjacking_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#dc1515</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
               <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer> 
+        </Rule>
+
+        <!-- incidente de trafico, prioridad medio -->
+        <Rule>
+          <Title>Incidente de trafico, prioridad medio</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>incidente_de_trafico</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>medio</Literal>
+            </PropertyIsEqualTo>
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#ddca1a</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer> 
+        </Rule>
+        
+        <!-- incidente de trafico, prioridad bajo -->
+        <Rule>
+          <Title>Incidente de trafico, prioridad bajo</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>incidente_de_trafico</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>bajo</Literal>
+            </PropertyIsEqualTo>
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="../rogue_symbols/security_carjacking_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#1ada27</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer> 
+        </Rule>
+        
+        <!-- incidente de trafico, prioridad incognita -->
+        <Rule>
+          <Title>Incidente de trafico, prioridad incognita</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>incidente_de_trafico</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="../rogue_symbols/security_carjacking_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
             </Graphic>
           </PointSymbolizer>
         </Rule>
-
+        
+        <!-- Danos y perjuicios, prioridad alto -->
         <Rule>
           <Title>Danos y perjuicios</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>danos_y_perjuicios</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>alto</Literal>
+            </PropertyIsEqualTo> 
+            </And>  
           </Filter>
-          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/damage_affected_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="../rogue_symbols/damage_affected_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#dc1515</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
               <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
 
+        <!-- Danos y perjuicios, prioridad medio -->
         <Rule>
-          <Title>Otro</Title>
+          <Title>Danos y perjuicios</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>danos_y_perjuicios</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>medio</Literal>
+            </PropertyIsEqualTo> 
+            </And>  
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="../rogue_symbols/damage_affected_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#ddca1a</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <!-- Danos y perjuicios, prioridad bajo -->
+        <Rule>
+          <Title>Danos y perjuicios</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>danos_y_perjuicios</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>bajo</Literal>
+            </PropertyIsEqualTo> 
+            </And>  
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="../rogue_symbols/damage_affected_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#1ada27</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <!-- Danos y perjuicios, prioridad incognita -->
+        <Rule>
+          <Title>Danos y perjuicios</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>danos_y_perjuicios</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>  
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="../rogue_symbols/damage_affected_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <!-- incidente otro, prioridad alto -->
+        <Rule>
+          <Title>Otro, prioridad alto</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>otro</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo> 
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>alto</Literal>
+            </PropertyIsEqualTo>
+            </And>
           </Filter>
-          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/security_attack_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_attack_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#dc1515</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
               <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <!-- incidente otro, prioridad medio -->
+        <Rule>
+          <Title>Otro, prioridad medio</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>otro</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo> 
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>medio</Literal>
+            </PropertyIsEqualTo>
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_attack_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#ddca1a</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <!-- incidente otro, prioridad bajo -->
+        <Rule>
+          <Title>Otro, prioridad bajo</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>otro</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo> 
+            <PropertyIsEqualTo>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+              <Literal>bajo</Literal>
+            </PropertyIsEqualTo>
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_attack_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                  <Stroke>
+                    <CssParameter name="stroke">#1ada27</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                  </Stroke>
+              </Mark>
+              <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <!-- incidente otro, prioridad incognita -->
+        <Rule>
+          <Title>Otro, prioridad incognita</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
+            <PropertyIsEqualTo>
+              <PropertyName>evento</PropertyName>
+              <Literal>otro</Literal>
+            </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_attack_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -113,13 +626,26 @@
         <Rule>
           <Filter xmlns="http://www.opengis.net/ogc">
             <Or>
+              <And>
               <PropertyIsEqualTo>
                 <PropertyName>evento</PropertyName>
                 <Literal>unknown</Literal>
               </PropertyIsEqualTo>
+                <PropertyIsNotEqualTo>
+                 <PropertyName>situacion_actual</PropertyName>
+                 <Literal>finalizado</Literal>
+               </PropertyIsNotEqualTo>
+              </And>
+              <And>
               <PropertyIsNull>
                 <PropertyName>evento</PropertyName>
               </PropertyIsNull>
+                <PropertyIsNotEqualTo>
+                 <PropertyName>situacion_actual</PropertyName>
+                 <Literal>finalizado</Literal>
+               </PropertyIsNotEqualTo>
+              </And>
+              
               <And>
                 <PropertyIsNotEqualTo>
                   <PropertyName>evento</PropertyName>
@@ -141,10 +667,13 @@
                   <PropertyName>evento</PropertyName>
                   <Literal>otro</Literal>
                 </PropertyIsNotEqualTo>
+                <PropertyIsNotEqualTo>
+                 <PropertyName>situacion_actual</PropertyName>
+                 <Literal>finalizado</Literal>
+               </PropertyIsNotEqualTo>
               </And>
             </Or>
           </Filter>
-          <!--<MaxScaleDenominator>5000000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
