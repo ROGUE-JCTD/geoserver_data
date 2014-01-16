@@ -1,0 +1,17 @@
+<dataStore>
+  <id>DataStoreInfoImpl--393594a1:1427668bc6b:-8000</id>
+  <name>copeco_op_repo</name>
+  <description>copeco_op_repo</description>
+  <type>GeoGIT</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-78ff667e:12476299803:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="geogit_repository">/var/lib/geoserver_data/geogit/copeco_op_repo</entry>
+    <entry key="branch">master</entry>
+    <entry key="create">false</entry>
+    <entry key="namespace">http://www.geonode.org/</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

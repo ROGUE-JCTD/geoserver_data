@@ -1,0 +1,16 @@
+2014-01-16 12:31:41,843 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:31:41,859 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-01-16 12:32:58,423 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:32:58,439 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-01-16 12:33:10,052 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:33:10,069 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-01-16 12:33:27,969 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:33:27,986 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-01-16 12:37:10,477 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:37:10,493 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-01-16 12:56:53,933 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:56:53,949 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-01-16 12:57:25,475 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:57:25,491 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-01-16 12:57:31,520 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:57:31,536 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000

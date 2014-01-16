@@ -1,0 +1,4 @@
+2014-01-16 12:38:01,340 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:38:10,765 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:38:26,268 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-01-16 12:38:26,786 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000

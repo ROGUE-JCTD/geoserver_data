@@ -1,0 +1,19 @@
+<layer>
+  <name>Viviendas</name>
+  <id>LayerInfoImpl--5ac3f5b1:143975b6139:-7ff2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--5ac3f5b1:143975b6139:-7fe1</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5ac3f5b1:143975b6139:-7ff4</id>
+  </resource>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <queryable>true</queryable>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

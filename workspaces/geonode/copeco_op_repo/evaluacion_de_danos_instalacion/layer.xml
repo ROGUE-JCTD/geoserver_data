@@ -1,0 +1,19 @@
+<layer>
+  <name>evaluacion_de_danos_instalacion</name>
+  <id>LayerInfoImpl--393594a1:1427668bc6b:-7ff4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--393594a1:1427668bc6b:-7fec</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--393594a1:1427668bc6b:-7ff5</id>
+  </resource>
+  <enabled>true</enabled>
+  <advertised>true</advertised>
+  <queryable>true</queryable>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
