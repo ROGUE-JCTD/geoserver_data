@@ -101,7 +101,7 @@ elementFormDefault="qualified">
 			</xsd:restriction>
 		</xsd:simpleType>
 </xsd:element>
-<xsd:element maxOccurs="1" minOccurs="0" name="observacio" nillible="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="observacio" nillable="true" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="departamen" nillable="true">
 		<xsd:simpleType>
 			<xsd:restriction base="xsd:string">
@@ -126,14 +126,14 @@ elementFormDefault="qualified">
 			</xsd:restriction>
 		</xsd:simpleType>
 </xsd:element>
-<xsd:element maxOccurs="1" minOccurs="0" name="municipio" nillible="true" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="institucio" nillible="true" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="contacto" nillible="true" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="nombre" nillible="true" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="telefono" nillible="true" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="direccion" nillible="true" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="informacio" nillible="true" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="fotos" nillible="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="municipio" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="institucio" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="contacto" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nombre" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="telefono" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="direccion" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="informacio" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="fotos" nillable="true" type="xsd:string"/>
 </xsd:sequence>
 </xsd:extension>
 </xsd:complexContent>
