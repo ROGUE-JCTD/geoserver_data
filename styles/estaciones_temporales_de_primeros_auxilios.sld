@@ -23,14 +23,12 @@
               </PropertyIsNotEqualTo>
               </And>
             </Filter>
-          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/cluster_firstaid_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/cluster_firstaid_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -43,14 +41,12 @@
                 <Literal>si</Literal>
               </PropertyIsEqualTo>
             </Filter>
-          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/cluster_triage_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/cluster_triage_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -75,14 +71,12 @@
                   </PropertyIsNotEqualTo>
               </And>
             </Filter>
-            <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
              <PointSymbolizer>
                <Graphic>
                  <ExternalGraphic>
-                   <OnlineResource xlink:href="../rogue_symbols/cluster_firstaid_inactive_100px.png" xlink:type="simple"/>
+                   <OnlineResource xlink:href="file://../rogue_symbols/cluster_firstaid_inactive_20px.png" xlink:type="simple"/>
                    <Format>image/png</Format>
                  </ExternalGraphic>
-                 <Size>25</Size>
                </Graphic>
              </PointSymbolizer>
         </Rule>
@@ -121,11 +115,10 @@
               </PropertyIsNotEqualTo>
             </And>
           </Filter>
-          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/td1_unknown.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/td1_unknown.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>

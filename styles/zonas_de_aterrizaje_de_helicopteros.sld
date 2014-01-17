@@ -11,14 +11,12 @@
         
         <Rule>
           <Title>zonas_de_aterrizaje_de_helicopteros</Title>
-          <!--<MaxScaleDenominator>250000</MaxScaleDenominator>-->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/logistics_helipad_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/logistics_helipad_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
