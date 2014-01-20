@@ -48,6 +48,7 @@
         <!-- Default Case -->
           
         <Rule>
+        <Title>Desconocido</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
             <Or>
               <PropertyIsEqualTo>
@@ -72,7 +73,7 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/td1_unknown.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/unknown_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>
