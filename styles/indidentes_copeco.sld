@@ -52,23 +52,11 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_priority_high_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#dc1515</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
-            </Graphic>
-          </PointSymbolizer>         
+          </PointSymbolizer>       
         </Rule>
         
         <!-- Nino perdido, prioridad medio -->
@@ -93,21 +81,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_priority_med_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-            </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#ddca1a</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>         
         </Rule>
@@ -134,23 +110,11 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_missing_priority_low_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#1ada27</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
-            </Graphic>
-          </PointSymbolizer>         
+          </PointSymbolizer>        
         </Rule>
         
         <!-- Nino perdido, prioridad incognita -->
@@ -162,6 +126,9 @@
               <PropertyName>evento</PropertyName>
               <Literal>nino_perdido</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNull>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+            </PropertyIsNull>
             <PropertyIsNotEqualTo>
               <PropertyName>situacion_actual</PropertyName>
               <Literal>finalizado</Literal>
@@ -200,23 +167,11 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_priority_high_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>
           </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#dc1515</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
-            </Graphic>
-          </PointSymbolizer> 
         </Rule>
 
         <!-- incidente de trafico, prioridad medio -->
@@ -241,23 +196,11 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_priority_med_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>
           </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#ddca1a</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
-            </Graphic>
-          </PointSymbolizer> 
         </Rule>
         
         <!-- incidente de trafico, prioridad bajo -->
@@ -282,23 +225,11 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/security_carjacking_priority_low_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>
           </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#1ada27</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
-            </Graphic>
-          </PointSymbolizer> 
         </Rule>
         
         <!-- incidente de trafico, prioridad incognita -->
@@ -310,6 +241,9 @@
               <PropertyName>evento</PropertyName>
               <Literal>incidente_de_trafico</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNull>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+            </PropertyIsNull>
             <PropertyIsNotEqualTo>
               <PropertyName>situacion_actual</PropertyName>
               <Literal>finalizado</Literal>
@@ -348,21 +282,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/damage_affected_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/damage_affected_priority_high_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-            </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#dc1515</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -389,21 +311,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/damage_affected_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/damage_affected_priority_med_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-            </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#ddca1a</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -430,21 +340,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/damage_affected_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/damage_affected_priority_low_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-            </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#1ada27</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -458,6 +356,9 @@
               <PropertyName>evento</PropertyName>
               <Literal>danos_y_perjuicios</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNull>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+            </PropertyIsNull>
             <PropertyIsNotEqualTo>
               <PropertyName>situacion_actual</PropertyName>
               <Literal>finalizado</Literal>
@@ -496,21 +397,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/product_type_report_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/product_type_report_priority_high_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-            </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#dc1515</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -537,21 +426,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/product_type_report_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/product_type_report_priority_med_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-            </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#ddca1a</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -578,21 +455,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/product_type_report_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/product_type_report_priority_low_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-            </Graphic>
-          </PointSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                  <Stroke>
-                    <CssParameter name="stroke">#1ada27</CssParameter>
-                    <CssParameter name="stroke-width">2</CssParameter>
-                  </Stroke>
-              </Mark>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -606,6 +471,9 @@
               <PropertyName>evento</PropertyName>
               <Literal>otro</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNull>
+              <PropertyName>nivel_de_prioridad</PropertyName>
+            </PropertyIsNull>
             <PropertyIsNotEqualTo>
               <PropertyName>situacion_actual</PropertyName>
               <Literal>finalizado</Literal>
@@ -624,6 +492,7 @@
         
         <!-- Default Case -->
         <Rule>
+         <Title>Desconocido</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
             <Or>
               <And>
@@ -677,7 +546,7 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="file://../rogue_symbols/td1_unknown.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/unknown_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>
