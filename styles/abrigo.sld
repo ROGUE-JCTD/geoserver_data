@@ -10,7 +10,56 @@
       <FeatureTypeStyle>
         
         <Rule>
-          <Title>Abrigo</Title>
+          <Title>Abrigo abierto</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <PropertyIsEqualTo>
+              <PropertyName>estado</PropertyName>
+                <Literal>abierto</Literal>
+            </PropertyIsEqualTo>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/cluster_shelter_open_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+                
+       <Rule>
+          <Title>Abrigo cerrado</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <PropertyIsEqualTo>
+              <PropertyName>estado</PropertyName>
+                <Literal>cerrado</Literal>
+            </PropertyIsEqualTo>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/cluster_shelter_closed_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <!-- Default Case -->
+        
+        <Rule>
+          <Title>Estado desconocido</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <Or>
+              <PropertyIsEqualTo>
+                <PropertyName>estado</PropertyName>
+                  <Literal>unknown</Literal>
+              </PropertyIsEqualTo>
+              <PropertyIsNull>
+                <PropertyName>estado</PropertyName>
+              </PropertyIsNull>
+            </Or>
+          </Filter>
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -20,7 +69,7 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-                
+        
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
