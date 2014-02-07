@@ -1,0 +1,16 @@
+<dataStore>
+  <id>DataStoreInfoImpl-75ee3a68:1440cf14321:-7ffe</id>
+  <name>copeco_vulnerabilidad</name>
+  <type>GeoGIT</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-78ff667e:12476299803:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="geogit_repository">/var/lib/geoserver_data/geogit/copeco_vulnerabilidad</entry>
+    <entry key="branch">master</entry>
+    <entry key="create">false</entry>
+    <entry key="namespace">http://www.geonode.org/</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>
