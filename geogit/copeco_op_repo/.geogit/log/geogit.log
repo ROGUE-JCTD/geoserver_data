@@ -1,0 +1,48 @@
+2014-02-11 22:30:14,004 ERROR [main] o.g.c.GeogitCLI [GeogitCLI.java:402] An unhandled error occurred: (JE 5.0.84) /var/lib/tomcat7/webapps/geoserver/data/geogit/copeco_op_repo/.geogit/index The environment cannot be locked for single writer access. ENV_LOCKED: The je.lck file could not be locked. Environment is invalid and must be closed.. See the log for more details.
+com.sleepycat.je.EnvironmentLockedException: (JE 5.0.84) /var/lib/tomcat7/webapps/geoserver/data/geogit/copeco_op_repo/.geogit/index The environment cannot be locked for single writer access. ENV_LOCKED: The je.lck file could not be locked. Environment is invalid and must be closed.
+	at com.sleepycat.je.log.FileManager.<init>(FileManager.java:368) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.dbi.EnvironmentImpl.<init>(EnvironmentImpl.java:483) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.dbi.EnvironmentImpl.<init>(EnvironmentImpl.java:409) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.dbi.DbEnvPool.getEnvironment(DbEnvPool.java:178) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.Environment.makeEnvironmentImpl(Environment.java:252) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.Environment.<init>(Environment.java:233) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.Environment.<init>(Environment.java:177) ~[je-5.0.84.jar:5.0.84]
+	at org.geogit.storage.bdbje.EnvironmentBuilder.get(EnvironmentBuilder.java:138) ~[geogit-bdbje-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.storage.bdbje.JEStagingDatabase$1.get(JEStagingDatabase.java:95) ~[geogit-bdbje-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.storage.bdbje.JEStagingDatabase$1.get(JEStagingDatabase.java:89) ~[geogit-bdbje-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at com.google.common.base.Suppliers$MemoizingSupplier.get(Suppliers.java:125) ~[guava-14.0.1.jar:na]
+	at org.geogit.storage.ForwardingStagingDatabase.getStagingDb(ForwardingStagingDatabase.java:56) ~[geogit-core-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.storage.ForwardingStagingDatabase.open(ForwardingStagingDatabase.java:64) ~[geogit-core-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.repository.Repository.open(Repository.java:91) ~[geogit-core-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.metrics.MetricsModule$1.invoke(MetricsModule.java:113) ~[geogit-metrics-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.api.GeoGIT.getRepository(GeoGIT.java:143) ~[geogit-core-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.loadRepository(GeogitCLI.java:167) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.getGeogit(GeogitCLI.java:140) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.execute(GeogitCLI.java:492) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.processCommand(GeogitCLI.java:380) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.main(GeogitCLI.java:246) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+2014-02-11 22:30:31,336 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-02-11 22:30:31,357 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-02-11 22:30:40,699 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'stagingdb.cache' configured with maxSize: 50000
+2014-02-11 22:30:40,719 INFO [main] o.g.d.c.CacheFactory [CacheFactory.java:64] Cache 'objectdb.cache' configured with maxSize: 50000
+2014-02-11 22:43:36,082 ERROR [main] o.g.c.GeogitCLI [GeogitCLI.java:402] An unhandled error occurred: (JE 5.0.84) /var/lib/tomcat7/webapps/geoserver/data/geogit/copeco_op_repo/.geogit/objects The environment cannot be locked for single writer access. ENV_LOCKED: The je.lck file could not be locked. Environment is invalid and must be closed.. See the log for more details.
+com.sleepycat.je.EnvironmentLockedException: (JE 5.0.84) /var/lib/tomcat7/webapps/geoserver/data/geogit/copeco_op_repo/.geogit/objects The environment cannot be locked for single writer access. ENV_LOCKED: The je.lck file could not be locked. Environment is invalid and must be closed.
+	at com.sleepycat.je.log.FileManager.<init>(FileManager.java:368) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.dbi.EnvironmentImpl.<init>(EnvironmentImpl.java:483) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.dbi.EnvironmentImpl.<init>(EnvironmentImpl.java:409) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.dbi.DbEnvPool.getEnvironment(DbEnvPool.java:178) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.Environment.makeEnvironmentImpl(Environment.java:252) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.Environment.<init>(Environment.java:233) ~[je-5.0.84.jar:5.0.84]
+	at com.sleepycat.je.Environment.<init>(Environment.java:177) ~[je-5.0.84.jar:5.0.84]
+	at org.geogit.storage.bdbje.EnvironmentBuilder.get(EnvironmentBuilder.java:138) ~[geogit-bdbje-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.storage.bdbje.JEObjectDatabase.getEnvironment(JEObjectDatabase.java:126) ~[geogit-bdbje-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.storage.bdbje.JEObjectDatabase.open(JEObjectDatabase.java:166) ~[geogit-bdbje-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.repository.Repository.open(Repository.java:89) ~[geogit-core-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.metrics.MetricsModule$1.invoke(MetricsModule.java:113) ~[geogit-metrics-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.api.GeoGIT.getRepository(GeoGIT.java:143) ~[geogit-core-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.loadRepository(GeogitCLI.java:167) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.getGeogit(GeogitCLI.java:140) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.porcelain.Version.run(Version.java:46) ~[geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.execute(GeogitCLI.java:497) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.processCommand(GeogitCLI.java:380) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.main(GeogitCLI.java:246) [geogit-cli-0.7-SNAPSHOT.jar:0.7-SNAPSHOT]

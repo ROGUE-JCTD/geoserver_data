@@ -1,0 +1,31 @@
+<dataStore>
+  <id>DataStoreInfoImpl-6c75f525:14422fe66bb:-7ffc</id>
+  <name>geonode_imports</name>
+  <type>PostGIS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-78ff667e:12476299803:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="Connection timeout">20</entry>
+    <entry key="port">5432</entry>
+    <entry key="passwd">crypt1:yGctLvnBpV3lm4Sqb96Qgg==</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="host">rogue-database</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="max connections">10</entry>
+    <entry key="database">geonode_imports</entry>
+    <entry key="namespace">http://www.geonode.org/</entry>
+    <entry key="schema">public</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="user">geonode</entry>
+    <entry key="min connections">1</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>
