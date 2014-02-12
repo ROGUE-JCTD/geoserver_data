@@ -7,7 +7,7 @@
     <id>WorkspaceInfoImpl-78ff667e:12476299803:-7ffd</id>
   </workspace>
   <connectionParameters>
-    <entry key="geogit_repository">/var/lib/tomcat7/webapps/geoserver/data/geogit/copeco_op_repo</entry>
+    <entry key="geogit_repository">/var/lib/geoserver_data/geogit/copeco_op_repo</entry>
     <entry key="branch">master</entry>
     <entry key="create">false</entry>
     <entry key="namespace">http://www.geonode.org/</entry>
