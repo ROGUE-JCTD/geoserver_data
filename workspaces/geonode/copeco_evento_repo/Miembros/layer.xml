@@ -1,0 +1,15 @@
+<layer>
+  <name>Miembros</name>
+  <id>LayerInfoImpl--6c974c2f:14427ba6cfa:-7ffc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--65195484:1442791c243:-7fe4</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6c974c2f:14427ba6cfa:-7ffd</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

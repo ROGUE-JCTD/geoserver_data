@@ -1,0 +1,15 @@
+<layer>
+  <name>puestos_de_control</name>
+  <id>LayerInfoImpl--65195484:1442791c243:-7ff3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--65195484:1442791c243:-7fe9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--65195484:1442791c243:-7ff4</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
