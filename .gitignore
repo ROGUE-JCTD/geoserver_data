@@ -1,1 +1,2 @@
 logs/geoserver.log
+*.lck
