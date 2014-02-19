@@ -12,14 +12,3 @@ version = 0.1
 
 [tinkergraph]
 version = 0.1
-
-[remote\origin]
-url = http://geoserver2.rogue.lmnsolutions.com/geoserver/geogit/geonode:copeco_capas_repo
-fetch = +refs/heads/*:refs/remotes/origin/*
-username = admin
-password = Am0ugWKfozI=
-
-[branches\master]
-remote = origin
-merge = refs/heads/master
-
