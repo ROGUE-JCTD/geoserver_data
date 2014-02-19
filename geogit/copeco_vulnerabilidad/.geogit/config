@@ -1,0 +1,25 @@
+[storage]
+refs = file
+objects = bdbje
+graph = tinkergraph
+staging = bdbje
+
+[file]
+version = 1.0
+
+[bdbje]
+version = 0.1
+
+[tinkergraph]
+version = 0.1
+
+[remote\origin]
+url = http://190.5.74.29/geoserver/geogit/geonode:copeco_vulnerabilidad
+fetch = +refs/heads/*:refs/remotes/origin/*
+username = admin
+password = Am0ugWKfozI=
+
+[branches\master]
+remote = origin
+merge = refs/heads/master
+
