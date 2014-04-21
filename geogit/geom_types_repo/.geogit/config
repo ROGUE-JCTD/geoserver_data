@@ -2,10 +2,8 @@
 refs = file
 objects = bdbje
 staging = bdbje
-graph = tinkergraph
+graph = bdbje
 [file]
 version = 1.0
 [bdbje]
-version = 0.1
-[tinkergraph]
 version = 0.1
