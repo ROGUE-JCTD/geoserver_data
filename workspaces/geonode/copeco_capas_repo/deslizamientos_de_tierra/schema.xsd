@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:topp="http://www.openplans.org/topp"
- targetNamespace="http://www.openplans.org/topp" elementFormDefault="qualified">
-
-        <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
-
-        <xsd:complexType name="incendio_forestalType">
-                <xsd:complexContent>
-                        <xsd:extension base="gml:AbstractFeatureType">
-                                <xsd:sequence>
-                                        <xsd:element maxOccurs="1" minOccurs="0" name="departmento" nillable="true">
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:geonode="http://www.geonode.org/" 
+ xmlns:gml="http://www.opengis.net/gml" xmlns:it.geosolutions="http://www.geo-solutions.it"
+ xmlns:topp="http://www.openplans.org/topp" elementFormDefault="qualified" targetNamespace="http://www.geonode.org/">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://192.168.10.160/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+  <xsd:complexType name="deslizamientos_de_tierraType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="departmento" nillable="true">
                                                                 <xsd:simpleType>
                                                                                 <xsd:restriction base="xsd:string">
                                                                                         <xsd:enumeration value="Atlantida"/>
@@ -35,11 +32,11 @@
                                                         </xsd:element>
                                         <xsd:element maxOccurs="1" minOccurs="0" name="municipio" nillable="true" type="xsd:string"/>
                                         <xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
-                                        <xsd:element maxOccurs="1" minOccurs="0" name="fotos" nillable="true" type="xsd:string"/>
-                                        <xsd:element maxOccurs="1" minOccurs="0" name="geom" nillable="true" type="gml:MultiPolygonPropertyType"/>
-                                </xsd:sequence>
-                        </xsd:extension>
-                </xsd:complexContent>
-        </xsd:complexType>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fotos" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="geom" nillable="true" type="gml:MultiPolygonPropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="deslizamientos_de_tierra" substitutionGroup="gml:_Feature" type="geonode:deslizamientos_de_tierraType"/>
 </xsd:schema>
-
