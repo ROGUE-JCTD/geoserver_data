@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="incendio_forestalType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="departamento" nillable="true">
+								<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:enumeration value="Atlantida"/>
+											<xsd:enumeration value="Choluteca"/>
+											<xsd:enumeration value="Colon"/>
+											<xsd:enumeration value="Comayagua"/>
+											<xsd:enumeration value="Copan"/>
+											<xsd:enumeration value="Cortes"/>
+											<xsd:enumeration value="El_Paraiso"/>
+											<xsd:enumeration value="Franciso_Morazan"/>
+											<xsd:enumeration value="Gracias_a_Dios"/>
+											<xsd:enumeration value="Intibuca"/>
+											<xsd:enumeration value="Islas_de_La_Bahia"/>
+											<xsd:enumeration value="La_Paz"/>
+											<xsd:enumeration value="Lempira"/>
+											<xsd:enumeration value="Ocotepeque"/>
+											<xsd:enumeration value="Olancho"/>
+											<xsd:enumeration value="Santa_Barbara"/>
+											<xsd:enumeration value="Valle"/>
+											<xsd:enumeration value="Yoro"/>
+										</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="municipio" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fecha_hora" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

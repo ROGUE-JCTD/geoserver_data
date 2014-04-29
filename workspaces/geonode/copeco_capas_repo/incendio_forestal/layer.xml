@@ -1,12 +1,12 @@
 <layer>
-  <name>vulnerabilidad_estructural</name>
-  <id>LayerInfoImpl--32d30a3b:1444bce33bb:-7ffc</id>
+  <name>incendio_forestal</name>
+  <id>LayerInfoImpl-7555fc3a:145aa3d1dab:-7ff9</id>
   <type>VECTOR</type>
   <defaultStyle>
-    <id>StyleInfoImpl-78ff667e:12476299803:-7ff9</id>
+    <id>StyleInfoImpl--6984cf15:145aa56c11c:-7ffe</id>
   </defaultStyle>
   <resource class="featureType">
-    <id>FeatureTypeInfoImpl--32d30a3b:1444bce33bb:-7ffd</id>
+    <id>FeatureTypeInfoImpl-7555fc3a:145aa3d1dab:-7ffa</id>
   </resource>
   <attribution>
     <logoWidth>0</logoWidth>

@@ -1,12 +1,12 @@
 <layer>
-  <name>incendio_forestal</name>
-  <id>LayerInfoImpl--32d30a3b:1444bce33bb:-7ffe</id>
+  <name>barriers</name>
+  <id>LayerInfoImpl-7555fc3a:145aa3d1dab:-7fff</id>
   <type>VECTOR</type>
   <defaultStyle>
-    <id>StyleInfoImpl-78ff667e:12476299803:-7ffa</id>
+    <id>StyleInfoImpl-78ff667e:12476299803:-7ffc</id>
   </defaultStyle>
   <resource class="featureType">
-    <id>FeatureTypeInfoImpl--32d30a3b:1444bce33bb:-7fff</id>
+    <id>FeatureTypeInfoImpl-7555fc3a:145aa3d1dab:-8000</id>
   </resource>
   <attribution>
     <logoWidth>0</logoWidth>
