@@ -1,0 +1,12 @@
+2014-04-30 16:11:08,252 ERROR [main] o.g.c.GeogitCLI [GeogitCLI.java:491] An unhandled error occurred: The specified mapping file does not exist. See the log for more details.
+java.lang.IllegalArgumentException: The specified mapping file does not exist
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:92) ~[guava-14.0.1.jar:na]
+	at org.geogit.osm.internal.Mapping.fromFile(Mapping.java:92) ~[geogit-osm-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.osm.internal.OSMDownloadOp._call(OSMDownloadOp.java:125) ~[geogit-osm-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.osm.internal.OSMDownloadOp._call(OSMDownloadOp.java:22) ~[geogit-osm-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.api.AbstractGeoGitOp.call(AbstractGeoGitOp.java:125) ~[geogit-core-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.osm.cli.commands.OSMDownload.runInternal(OSMDownload.java:96) ~[geogit-osm-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.cli.AbstractCommand.run(AbstractCommand.java:60) ~[geogit-cli-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.executeInternal(GeogitCLI.java:604) [geogit-cli-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.execute(GeogitCLI.java:462) [geogit-cli-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]
+	at org.geogit.cli.GeogitCLI.main(GeogitCLI.java:321) [geogit-cli-0.8-SNAPSHOT.jar:0.8-SNAPSHOT]

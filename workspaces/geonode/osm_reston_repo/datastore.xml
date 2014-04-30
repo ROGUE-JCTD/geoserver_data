@@ -1,0 +1,17 @@
+<dataStore>
+  <id>DataStoreInfoImpl-4171d556:145b37bdfcb:-8000</id>
+  <name>osm_reston_repo</name>
+  <description>osm_reston_repo</description>
+  <type>GeoGIT</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-78ff667e:12476299803:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="geogit_repository">/var/lib/geoserver_data/geogit/osm_reston_repo</entry>
+    <entry key="branch">master</entry>
+    <entry key="create">false</entry>
+    <entry key="namespace">http://www.geonode.org/</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>
