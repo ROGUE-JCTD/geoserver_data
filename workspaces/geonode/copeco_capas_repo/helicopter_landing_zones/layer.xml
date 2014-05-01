@@ -1,0 +1,15 @@
+<layer>
+  <name>helicopter_landing_zones</name>
+  <id>LayerInfoImpl-75be93fe:145b83f4e79:-7fff</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--65195484:1442791c243:-7fe8</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-75be93fe:145b83f4e79:-8000</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
