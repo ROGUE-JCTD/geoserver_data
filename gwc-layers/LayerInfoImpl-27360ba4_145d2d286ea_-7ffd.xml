@@ -1,10 +1,10 @@
 <GeoServerTileLayer>
-  <id>LayerInfoImpl-7555fc3a:145aa3d1dab:-7ff9</id>
+  <id>LayerInfoImpl-27360ba4:145d2d286ea:-7ffd</id>
   <enabled>true</enabled>
-  <name>geonode:incendio_forestal</name>
+  <name>geonode:incendio</name>
   <mimeFormats>
-    <string>image/jpeg</string>
     <string>image/png</string>
+    <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
