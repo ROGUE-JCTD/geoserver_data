@@ -20,12 +20,14 @@
       <filter>formLogout</filter>
     </filters>
     <filters name="geogit" class="org.geoserver.security.ServiceLoginFilterChain" interceptorName="restInterceptor" exceptionTranslationName="exception" path="/geogit**,/geogit/**" disabled="false" allowSessionCreation="false" ssl="false" matchHTTPMethod="false">
-      <filter>basic</filter>
       <filter>geonodeCookieFilter</filter>
+      <filter>basic</filter>
+      <filter>geonodeAnonymousFilter</filter>
+      <filter>anonymous</filter>
     </filters>
     <filters name="rest" class="org.geoserver.security.ServiceLoginFilterChain" interceptorName="restInterceptor" exceptionTranslationName="exception" path="/rest/**" disabled="false" allowSessionCreation="false" ssl="false" matchHTTPMethod="false">
-      <filter>basic</filter>
       <filter>geonodeCookieFilter</filter>
+      <filter>basic</filter>
       <filter>geonodeAnonymousFilter</filter>
       <filter>anonymous</filter>
     </filters>
