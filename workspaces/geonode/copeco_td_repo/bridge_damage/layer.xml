@@ -1,16 +1,14 @@
 <layer>
   <name>bridge_damage</name>
-  <id>LayerInfoImpl-7555fc3a:145aa3d1dab:-7ffd</id>
+  <id>LayerInfoImpl--3463c0ff:145dc0311ac:-7ffc</id>
   <type>VECTOR</type>
   <defaultStyle>
     <id>StyleInfoImpl-78ff667e:12476299803:-7ff9</id>
   </defaultStyle>
   <resource class="featureType">
-    <id>FeatureTypeInfoImpl-7555fc3a:145aa3d1dab:-7ffe</id>
+    <id>FeatureTypeInfoImpl--3463c0ff:145dc0311ac:-7ffd</id>
   </resource>
-  <queryable>true</queryable>
   <attribution>
-    <title>admin</title>
     <logoWidth>0</logoWidth>
     <logoHeight>0</logoHeight>
   </attribution>

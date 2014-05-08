@@ -1,5 +1,5 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-27360ba4:145d2d286ea:-7ffe</id>
+  <id>FeatureTypeInfoImpl--3463c0ff:145dc0311ac:-7ff7</id>
   <name>incendio</name>
   <nativeName>incendio</nativeName>
   <namespace>
@@ -45,7 +45,7 @@
     <entry key="cachingEnabled">false</entry>
   </metadata>
   <store class="dataStore">
-    <id>DataStoreInfoImpl-6494c394:144283140e1:-8000</id>
+    <id>DataStoreInfoImpl--3463c0ff:145dc0311ac:-8000</id>
   </store>
   <maxFeatures>0</maxFeatures>
   <numDecimals>0</numDecimals>
