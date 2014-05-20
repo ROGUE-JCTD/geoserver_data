@@ -1,6 +1,6 @@
 <GeoServerGWCConfig>
   <version>1.0.0</version>
-  <directWMSIntegrationEnabled>false</directWMSIntegrationEnabled>
+  <directWMSIntegrationEnabled>true</directWMSIntegrationEnabled>
   <WMSCEnabled>true</WMSCEnabled>
   <WMTSEnabled>true</WMTSEnabled>
   <TMSEnabled>true</TMSEnabled>
@@ -12,17 +12,18 @@
   <defaultCachingGridSetIds>
     <string>EPSG:4326</string>
     <string>EPSG:900913</string>
+    <string>EPSG:3857</string>
   </defaultCachingGridSetIds>
   <defaultCoverageCacheFormats>
-    <string>image/png</string>
     <string>image/jpeg</string>
+    <string>image/png</string>
   </defaultCoverageCacheFormats>
   <defaultVectorCacheFormats>
-    <string>image/png</string>
     <string>image/jpeg</string>
+    <string>image/png</string>
   </defaultVectorCacheFormats>
   <defaultOtherCacheFormats>
-    <string>image/png</string>
     <string>image/jpeg</string>
+    <string>image/png</string>
   </defaultOtherCacheFormats>
 </GeoServerGWCConfig>
