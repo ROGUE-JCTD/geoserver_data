@@ -3,21 +3,10 @@
   <enabled>true</enabled>
   <name>geonode:multiline_test</name>
   <mimeFormats>
-    <string>image/jpeg</string>
     <string>image/png</string>
+    <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
-    <gridSubset>
-      <gridSetName>EPSG:900913</gridSetName>
-      <extent>
-        <coords>
-          <double>-2.003750834E7</double>
-          <double>-2.003750834E7</double>
-          <double>2.003750834E7</double>
-          <double>2.003750834E7</double>
-        </coords>
-      </extent>
-    </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:4326</gridSetName>
       <extent>
@@ -30,7 +19,26 @@
       </extent>
     </gridSubset>
     <gridSubset>
+      <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>-2.003750834E7</double>
+          <double>-2.003750834E7</double>
+          <double>2.003750834E7</double>
+          <double>2.003750834E7</double>
+        </coords>
+      </extent>
+    </gridSubset>
+    <gridSubset>
       <gridSetName>EPSG:3857</gridSetName>
+      <extent>
+        <coords>
+          <double>-2.003750834E7</double>
+          <double>-2.003750834E7</double>
+          <double>2.003750834E7</double>
+          <double>2.003750834E7</double>
+        </coords>
+      </extent>
     </gridSubset>
   </gridSubsets>
   <metaWidthHeight>

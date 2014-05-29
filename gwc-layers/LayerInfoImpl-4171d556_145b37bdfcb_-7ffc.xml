@@ -3,15 +3,23 @@
   <enabled>true</enabled>
   <name>geonode:osm_reston_roads</name>
   <mimeFormats>
-    <string>image/jpeg</string>
     <string>image/png</string>
+    <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
-      <gridSetName>EPSG:3857</gridSetName>
+      <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>-8614812.341772303</double>
+          <double>4715030.3416598365</double>
+          <double>-8608755.131930862</double>
+          <double>4718526.305395411</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
-      <gridSetName>EPSG:900913</gridSetName>
+      <gridSetName>EPSG:3857</gridSetName>
       <extent>
         <coords>
           <double>-8614812.341772303</double>

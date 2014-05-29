@@ -3,8 +3,8 @@
   <enabled>true</enabled>
   <name>geonode:osm_tegu_roads</name>
   <mimeFormats>
-    <string>image/jpeg</string>
     <string>image/png</string>
+    <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
@@ -20,6 +20,14 @@
     </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:3857</gridSetName>
+      <extent>
+        <coords>
+          <double>-9722129.242229909</double>
+          <double>1573067.1942670303</double>
+          <double>-9691189.231780699</double>
+          <double>1597539.9918095656</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:4326</gridSetName>

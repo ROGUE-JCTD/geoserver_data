@@ -14,4 +14,10 @@
     <logoWidth>0</logoWidth>
     <logoHeight>0</logoHeight>
   </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIT_ENTRY_POINT</authority>
+      <identifier>geonode:copeco_op_repo:master</identifier>
+    </Identifier>
+  </identifiers>
 </layer>
