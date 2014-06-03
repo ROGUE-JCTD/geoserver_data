@@ -1,0 +1,23 @@
+<layer>
+  <name>perimeters_jtfb</name>
+  <id>LayerInfoImpl-4b58a387:1466339725c:-7feb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4b58a387:1466339725c:-7f5a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4b58a387:1466339725c:-7fec</id>
+  </resource>
+  <queryable>true</queryable>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIT_ENTRY_POINT</authority>
+      <identifier>geonode:jtfb_od2_repo:master</identifier>
+    </Identifier>
+  </identifiers>
+</layer>

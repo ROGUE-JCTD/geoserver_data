@@ -1,0 +1,23 @@
+<layer>
+  <name>estaciones_de_policia_od2</name>
+  <id>LayerInfoImpl-4b58a387:1466339725c:-7ffa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--65195484:1442791c243:-7fed</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4b58a387:1466339725c:-7ffb</id>
+  </resource>
+  <queryable>true</queryable>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIT_ENTRY_POINT</authority>
+      <identifier>geonode:copeco_od2_repo:master</identifier>
+    </Identifier>
+  </identifiers>
+</layer>

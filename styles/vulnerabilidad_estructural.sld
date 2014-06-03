@@ -19,12 +19,10 @@
           </Filter>
           <PointSymbolizer>
             <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#cc0000</CssParameter>
-                </Fill>
-              </Mark>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/infrastructure_building_20px_redbox.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
               <Size>15</Size>
             </Graphic>
           </PointSymbolizer>
@@ -40,12 +38,10 @@
           </Filter>
           <PointSymbolizer>
             <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#ff8000</CssParameter>
-                </Fill>
-              </Mark>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/infrastructure_building_20px_orangebox.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
               <Size>15</Size>
             </Graphic>
           </PointSymbolizer>
@@ -61,12 +57,10 @@
           </Filter>
           <PointSymbolizer>
             <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#cccc00</CssParameter>
-                </Fill>
-              </Mark>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/infrastructure_building_20px_yellowbox.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
               <Size>15</Size>
             </Graphic>
           </PointSymbolizer>
@@ -82,12 +76,10 @@
           </Filter>
           <PointSymbolizer>
             <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#ff66ff</CssParameter>
-                </Fill>
-              </Mark>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/infrastructure_building_20px_pinkbox.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
               <Size>15</Size>
             </Graphic>
           </PointSymbolizer>
@@ -103,12 +95,10 @@
           </Filter>
           <PointSymbolizer>
             <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#00cc00</CssParameter>
-                </Fill>
-              </Mark>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/infrastructure_building_20px_greenbox.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
               <Size>15</Size>
             </Graphic>
           </PointSymbolizer>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="helicopter_landing_zones_jtfbType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="type" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="hasty"/>
+								<xsd:enumeration value="permanent"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="report_date_time" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="landing_point_width" nillable="true" type="xsd:double"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="max_ground_slope_angle" nillable="true" type="xsd:double"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="ground_slope_direction" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="N"/>
+								<xsd:enumeration value="NE"/>
+								<xsd:enumeration value="E"/>
+								<xsd:enumeration value="SE"/>
+								<xsd:enumeration value="S"/>
+								<xsd:enumeration value="SW"/>
+								<xsd:enumeration value="W"/>
+								<xsd:enumeration value="NW"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="prevailing_wind_direction" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="N"/>
+								<xsd:enumeration value="NE"/>
+								<xsd:enumeration value="E"/>
+								<xsd:enumeration value="SE"/>
+								<xsd:enumeration value="S"/>
+								<xsd:enumeration value="SW"/>
+								<xsd:enumeration value="W"/>
+								<xsd:enumeration value="NW"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="temperature" nillable="true" type="xsd:double"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="surface_condition" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="good"/>
+								<xsd:enumeration value="poor"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="surface_type" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="grass"/>
+								<xsd:enumeration value="dirt"/>
+								<xsd:enumeration value="concrete"/>
+								<xsd:enumeration value="asphalt"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="approach_angle" nillable="true" type="xsd:double"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="approach_max_obstacle_height" nillable="true" type="xsd:double"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="departure_direction" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="N"/>
+								<xsd:enumeration value="S"/>
+								<xsd:enumeration value="E"/>
+								<xsd:enumeration value="W"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="departure_angle" nillable="true" type="xsd:double"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="departure_max_obstacle_height" nillable="true" type="xsd:double"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comments" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="photos" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="geom" nillable="true" type="gml:PointPropertyType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>
