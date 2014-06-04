@@ -1,0 +1,21 @@
+<layer>
+  <name>osm_od2_roads</name>
+  <id>LayerInfoImpl--6d4646ca:1466431a7f8:-7ff6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-78ff667e:12476299803:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6d4646ca:1466431a7f8:-7ff7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIT_ENTRY_POINT</authority>
+      <identifier>geonode:osm_od2_repo:master</identifier>
+    </Identifier>
+  </identifiers>
+</layer>

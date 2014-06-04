@@ -1,0 +1,21 @@
+<layer>
+  <name>osm_od2_buildings</name>
+  <id>LayerInfoImpl--6d4646ca:1466431a7f8:-7ff8</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-78ff667e:12476299803:-7ffa</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6d4646ca:1466431a7f8:-7ff9</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIT_ENTRY_POINT</authority>
+      <identifier>geonode:osm_od2_repo:master</identifier>
+    </Identifier>
+  </identifiers>
+</layer>
