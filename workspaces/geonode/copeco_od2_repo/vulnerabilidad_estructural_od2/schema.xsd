@@ -22,142 +22,143 @@ elementFormDefault="qualified">
                                 				<xsd:enumeration value="Ninguno"/>
                             				</xsd:restriction>
                             		</xsd:simpleType>
+                            	</xsd:element>
 
-					<xsd:element maxOccurs="1" minOccurs="0" name="No_Formulario" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Fecha_Hora_Visita" nillable="true" type="xsd:dateTime"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Propietario" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="No_Indentidad" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Telefono" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Arrendatario" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Calle" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Bl" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Lote" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Barrio" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Uso_Predominante" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="Residential"/>
-                                				<xsd:enumeration value="Comercial"/>
-												<xsd:enumeration value="Educacional"/>
-												<xsd:enumeration value="Salud"/>
-												<xsd:enumeration value="Hotelero"/>
-												<xsd:enumeration value="Oficinas"/>
-												<xsd:enumeration value="Industrial"/>
-												<xsd:enumeration value="Bodegas"/>
-												<xsd:enumeration value="Parqueaderos"/>
-												<xsd:enumeration value="Multiproposito"/>
-												<xsd:enumeration value="Otros"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Estrato_Vivienda" nillable="true" type="xsd:string"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Localizacio_Manzana" nillable="true" type="xsd:string"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Niveles_sobre_el_terreno" nillable="true" type="xsd:string"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Sotanos" nillable="true" type="xsd:string"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Total" nillable="true" type="xsd:string"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Primer_Piso" nillable="true" type="xsd:integer"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Segundo_Piso" nillable="true" type="xsd:integer"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Tercer_Piso" nillable="true" type="xsd:integer"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Cuarto_Piso" nillable="true" type="xsd:integer"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Tenencia_Bien" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="Inmueble_Propio"/>
-                                				<xsd:enumeration value="Arrendado"/>
-                                				<xsd:enumeration value="Dominio_Util"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Estado_Construccion" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="Completa"/>
-                                				<xsd:enumeration value="Incompleta"/>
-                                				<xsd:enumeration value="En_Construccion"/>
-                                				<xsd:enumeration value="No_Construido"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Porcentaje_Caso" nillable="true" type="xsd:string"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Control_Calidad_Construccion" nillable="true">
-								<xsd:simpleType>
-										<xsd:restriction base="xsd:string">
-											<xsd:enumeration value="Autocontruccion"/>
-											<xsd:enumeration value="Con_Supervision_Profesional"/>
-										</xsd:restriction>
-								</xsd:simpleType>
-							</xsd:element>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Anos_Construida" nillable="true" type="xsd:integer"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="N_Apartamentos_Locales" nillable="true" type="xsd:integer"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="N_Familias" nillable="true" type="xsd:integer"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="N_Residentes" nillable="true" type="xsd:integer"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="N_Anos_Residir_Edificacion" nillable="true" type="xsd:integer"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="N_Anos_Residir_Barrio" nillable="true" type="xsd:integer"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Acceso_Edificacion" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="Peatonal_Tierra"/>
-                                				<xsd:enumeration value="Peatonal_Pavimentado"/>
-                                				<xsd:enumeration value="Vehicular_Tierra"/>
-                                				<xsd:enumeration value="Vehicular_Pavimentado"/>
-                                				<xsd:enumeration value="Sin_Acceso"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Servicios_Publicos" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="Agua_Portable"/>
-                                				<xsd:enumeration value="Alcantarillado_Pluvial"/>
-                                				<xsd:enumeration value="Energia_Electrica"/>
-                                				<xsd:enumeration value="Aguas_Negras"/>
-                                				<xsd:enumeration value="Telefono"/>
-                                				<xsd:enumeration value="Internet"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
-		    <xsd:element maxOccurs="1" minOccurs="0" name="Sometida_Empujes_Tierra" nillable="true" type="xsd:string"/>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Sometida_Deslizamiento" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="1/3"/>
-                                				<xsd:enumeration value="1/2"/>
-                                				<xsd:enumeration value="2/3"/>
-                                				<xsd:enumeration value="Total"/>
-                                				<xsd:enumeration value="N/A"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Cimentacion" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="Zapatas_Aisiadas"/>
-                                				<xsd:enumeration value="Zapatas_Corridas"/>
-                                				<xsd:enumeration value="Mixto"/>
-                                				<xsd:enumeration value="Mamposteria_Zapatas_Corridas"/>
-                                				<xsd:enumeration value="Pilotes"/>
-                                				<xsd:enumeration value="Vigas_Tensoras"/>
-                                				<xsd:enumeration value="Losa_Cimentacion"/>
-                                				<xsd:enumeration value="No_Existe"/>
-                                				<xsd:enumeration value="No_Identificada"/>
-                                				<xsd:enumeration value="Otro"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="Sistema_Entrepiso" nillable="true">
-						<xsd:simpleType>
-                            				<xsd:restriction base="xsd:string">
-                                				<xsd:enumeration value="Losas_Concreto"/>
-                                				<xsd:enumeration value="Losas_Aligeradas_Concreto"/>
-                                				<xsd:enumeration value="Lamina_Colaborante"/>
-                                				<xsd:enumeration value="Vigas_Metalicas"/>
-                                				<xsd:enumeration value="Joist"/>
-                                				<xsd:enumeration value="Entramado_Madera"/>
-                                				<xsd:enumeration value="Otro"/>
-                                				<xsd:enumeration value="No_Aplica"/>
-                            				</xsd:restriction>
-                        			</xsd:simpleType>
-                        		</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="0" name="No_Formulario" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Fecha_Hora_Visita" nillable="true" type="xsd:dateTime"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Propietario" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="No_Indentidad" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Telefono" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Arrendatario" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Calle" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Bl" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Lote" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Barrio" nillable="true" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Uso_Predominante" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="Residential"/>
+                        				<xsd:enumeration value="Comercial"/>
+											<xsd:enumeration value="Educacional"/>
+											<xsd:enumeration value="Salud"/>
+											<xsd:enumeration value="Hotelero"/>
+											<xsd:enumeration value="Oficinas"/>
+											<xsd:enumeration value="Industrial"/>
+											<xsd:enumeration value="Bodegas"/>
+											<xsd:enumeration value="Parqueaderos"/>
+											<xsd:enumeration value="Multiproposito"/>
+											<xsd:enumeration value="Otros"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Estrato_Vivienda" nillable="true" type="xsd:string"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Localizacio_Manzana" nillable="true" type="xsd:string"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Niveles_sobre_el_terreno" nillable="true" type="xsd:string"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Sotanos" nillable="true" type="xsd:string"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Total" nillable="true" type="xsd:string"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Primer_Piso" nillable="true" type="xsd:integer"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Segundo_Piso" nillable="true" type="xsd:integer"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Tercer_Piso" nillable="true" type="xsd:integer"/>
+	                        <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Cuarto_Piso" nillable="true" type="xsd:integer"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Tenencia_Bien" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="Inmueble_Propio"/>
+                        				<xsd:enumeration value="Arrendado"/>
+                        				<xsd:enumeration value="Dominio_Util"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
+                    		<xsd:element maxOccurs="1" minOccurs="0" name="Estado_Construccion" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="Completa"/>
+                        				<xsd:enumeration value="Incompleta"/>
+                        				<xsd:enumeration value="En_Construccion"/>
+                        				<xsd:enumeration value="No_Construido"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
+                    		<xsd:element maxOccurs="1" minOccurs="0" name="Porcentaje_Caso" nillable="true" type="xsd:string"/>
+                    		<xsd:element maxOccurs="1" minOccurs="0" name="Control_Calidad_Construccion" nillable="true">
+					<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="Autocontruccion"/>
+								<xsd:enumeration value="Con_Supervision_Profesional"/>
+							</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Anos_Construida" nillable="true" type="xsd:integer"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="N_Apartamentos_Locales" nillable="true" type="xsd:integer"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="N_Familias" nillable="true" type="xsd:integer"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="N_Residentes" nillable="true" type="xsd:integer"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="N_Anos_Residir_Edificacion" nillable="true" type="xsd:integer"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="N_Anos_Residir_Barrio" nillable="true" type="xsd:integer"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="Acceso_Edificacion" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="Peatonal_Tierra"/>
+                        				<xsd:enumeration value="Peatonal_Pavimentado"/>
+                        				<xsd:enumeration value="Vehicular_Tierra"/>
+                        				<xsd:enumeration value="Vehicular_Pavimentado"/>
+                        				<xsd:enumeration value="Sin_Acceso"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
+                    		<xsd:element maxOccurs="1" minOccurs="0" name="Servicios_Publicos" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="Agua_Portable"/>
+                        				<xsd:enumeration value="Alcantarillado_Pluvial"/>
+                        				<xsd:enumeration value="Energia_Electrica"/>
+                        				<xsd:enumeration value="Aguas_Negras"/>
+                        				<xsd:enumeration value="Telefono"/>
+                        				<xsd:enumeration value="Internet"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
+		    		<xsd:element maxOccurs="1" minOccurs="0" name="Sometida_Empujes_Tierra" nillable="true" type="xsd:string"/>
+                    		<xsd:element maxOccurs="1" minOccurs="0" name="Area_Sometida_Deslizamiento" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="1/3"/>
+                        				<xsd:enumeration value="1/2"/>
+                        				<xsd:enumeration value="2/3"/>
+                        				<xsd:enumeration value="Total"/>
+                        				<xsd:enumeration value="N/A"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
+                    		<xsd:element maxOccurs="1" minOccurs="0" name="Cimentacion" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="Zapatas_Aisiadas"/>
+                        				<xsd:enumeration value="Zapatas_Corridas"/>
+                        				<xsd:enumeration value="Mixto"/>
+                        				<xsd:enumeration value="Mamposteria_Zapatas_Corridas"/>
+                        				<xsd:enumeration value="Pilotes"/>
+                        				<xsd:enumeration value="Vigas_Tensoras"/>
+                        				<xsd:enumeration value="Losa_Cimentacion"/>
+                        				<xsd:enumeration value="No_Existe"/>
+                        				<xsd:enumeration value="No_Identificada"/>
+                        				<xsd:enumeration value="Otro"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
+                    		<xsd:element maxOccurs="1" minOccurs="0" name="Sistema_Entrepiso" nillable="true">
+					<xsd:simpleType>
+                    				<xsd:restriction base="xsd:string">
+                        				<xsd:enumeration value="Losas_Concreto"/>
+                        				<xsd:enumeration value="Losas_Aligeradas_Concreto"/>
+                        				<xsd:enumeration value="Lamina_Colaborante"/>
+                        				<xsd:enumeration value="Vigas_Metalicas"/>
+                        				<xsd:enumeration value="Joist"/>
+                        				<xsd:enumeration value="Entramado_Madera"/>
+                        				<xsd:enumeration value="Otro"/>
+                        				<xsd:enumeration value="No_Aplica"/>
+                    				</xsd:restriction>
+                			</xsd:simpleType>
+                		</xsd:element>
                     <xsd:element maxOccurs="1" minOccurs="0" name="Sistema_Cubierta" nillable="true">
 						<xsd:simpleType>
                             				<xsd:restriction base="xsd:string">
@@ -240,7 +241,6 @@ elementFormDefault="qualified">
                                 				<xsd:enumeration value="Bajo"/>
                             				</xsd:restriction>
                             		</xsd:simpleType>
-                        		</xsd:element>
                         		</xsd:element>
                     <xsd:element maxOccurs="1" minOccurs="0" name="Contacto_Estructura_Expuesta" nillable="true">
 						<xsd:simpleType>
