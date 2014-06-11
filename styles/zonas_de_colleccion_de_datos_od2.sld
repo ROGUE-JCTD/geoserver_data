@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0">
+  <sld:NamedLayer>
+    <sld:Name>zonas_de_colleccion_de_datos_od2</sld:Name>
+    <sld:UserStyle>
+      <sld:Name>zonas_de_colleccion_de_datos_od2</sld:Name>
+      <sld:Title>A violet polygon style</sld:Title>
+      <sld:IsDefault>1</sld:IsDefault>
+      <sld:FeatureTypeStyle>
+        <sld:Name>name</sld:Name>
+        <sld:Rule>
+          <sld:Title>Finalizado</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>estado</ogc:PropertyName>
+              <ogc:Literal>finalizado</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#2E8A03</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>zona</ogc:PropertyName>
+            </sld:Label>
+            <sld:LabelPlacement>
+              <sld:PointPlacement>
+                <sld:AnchorPoint>
+                  <sld:AnchorPointX>0.0</sld:AnchorPointX>
+                  <sld:AnchorPointY>0.5</sld:AnchorPointY>
+                </sld:AnchorPoint>
+              </sld:PointPlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>0.75</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FFFFFF</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#070707</sld:CssParameter>
+            </sld:Fill>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>En Proceso</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>estado</ogc:PropertyName>
+              <ogc:Literal>en_proceso</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFFB02</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>zona</ogc:PropertyName>
+            </sld:Label>
+            <sld:LabelPlacement>
+              <sld:PointPlacement>
+                <sld:AnchorPoint>
+                  <sld:AnchorPointX>0.0</sld:AnchorPointX>
+                  <sld:AnchorPointY>0.5</sld:AnchorPointY>
+                </sld:AnchorPoint>
+              </sld:PointPlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>0.75</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FCFAFA</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#040400</sld:CssParameter>
+            </sld:Fill>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>Pendiente</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>estado</ogc:PropertyName>
+              <ogc:Literal>pendiente</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FE0314</sld:CssParameter>
+            </sld:Stroke>
+          </sld:PolygonSymbolizer>
+          <sld:TextSymbolizer>
+            <sld:Label>
+              <ogc:PropertyName>zona</ogc:PropertyName>
+            </sld:Label>
+            <sld:LabelPlacement>
+              <sld:PointPlacement>
+                <sld:AnchorPoint>
+                  <sld:AnchorPointX>0.0</sld:AnchorPointX>
+                  <sld:AnchorPointY>0.5</sld:AnchorPointY>
+                </sld:AnchorPoint>
+              </sld:PointPlacement>
+            </sld:LabelPlacement>
+            <sld:Halo>
+              <sld:Radius>0.75</sld:Radius>
+              <sld:Fill>
+                <sld:CssParameter name="fill">#FDFAFA</sld:CssParameter>
+              </sld:Fill>
+            </sld:Halo>
+          </sld:TextSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>estado</ogc:PropertyName>
+                <ogc:Literal>finalizado</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>estado</ogc:PropertyName>
+                <ogc:Literal>en_proceso</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>estado</ogc:PropertyName>
+                <ogc:Literal>pendiente</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill/>
+            <sld:Stroke/>
+          </sld:PolygonSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </sld:NamedLayer>
+</sld:StyledLayerDescriptor>

@@ -1,0 +1,23 @@
+<layer>
+  <name>zonas_de_colleccion_de_datos_od2</name>
+  <id>LayerInfoImpl--61d37121:1468af80e5b:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--61d37121:1468af80e5b:-7ffb</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--61d37121:1468af80e5b:-7ffe</id>
+  </resource>
+  <queryable>true</queryable>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIT_ENTRY_POINT</authority>
+      <identifier>geonode:copeco_od2_repo:master</identifier>
+    </Identifier>
+  </identifiers>
+</layer>

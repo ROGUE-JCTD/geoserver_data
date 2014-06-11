@@ -8,7 +8,9 @@
   <resource class="featureType">
     <id>FeatureTypeInfoImpl--6d4646ca:1466431a7f8:-7ff7</id>
   </resource>
+  <queryable>true</queryable>
   <attribution>
+    <title>admin</title>
     <logoWidth>0</logoWidth>
     <logoHeight>0</logoHeight>
   </attribution>

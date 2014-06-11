@@ -6,10 +6,39 @@
     <id>NamespaceInfoImpl-78ff667e:12476299803:-7ffe</id>
   </namespace>
   <title>estaciones_de_bomberos</title>
-  <keywords>
-    <string>estaciones_de_bomberos</string>
-    <string>features</string>
-  </keywords>
+  <abstract>No abstract provided</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>other</metadataType>
+      <content>http://190.5.74.30/catalogue/csw?outputschema=http%3A%2F%2Fwww.w3.org%2F2005%2FAtom&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=061ee371-7bea-4f4e-b398-3b5bfd1cbb3c</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>other</metadataType>
+      <content>http://190.5.74.30/catalogue/csw?outputschema=http%3A%2F%2Fgcmd.gsfc.nasa.gov%2FAboutus%2Fxml%2Fdif%2F&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=061ee371-7bea-4f4e-b398-3b5bfd1cbb3c</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>other</metadataType>
+      <content>http://190.5.74.30/catalogue/csw?outputschema=http%3A%2F%2Fwww.opengis.net%2Fcat%2Fcsw%2F2.0.2&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=061ee371-7bea-4f4e-b398-3b5bfd1cbb3c</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>other</metadataType>
+      <content>http://190.5.74.30/catalogue/csw?outputschema=urn%3Aoasis%3Anames%3Atc%3Aebxml-regrep%3Axsd%3Arim%3A3.0&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=061ee371-7bea-4f4e-b398-3b5bfd1cbb3c</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>FGDC</metadataType>
+      <content>http://190.5.74.30/catalogue/csw?outputschema=http%3A%2F%2Fwww.opengis.net%2Fcat%2Fcsw%2Fcsdgm&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=061ee371-7bea-4f4e-b398-3b5bfd1cbb3c</content>
+    </metadataLink>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>TC211</metadataType>
+      <content>http://190.5.74.30/catalogue/csw?outputschema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=061ee371-7bea-4f4e-b398-3b5bfd1cbb3c</content>
+    </metadataLink>
+  </metadataLinks>
   <nativeCRS>GEOGCS[&quot;GCS_WGS_1984&quot;, 
   DATUM[&quot;D_WGS_1984&quot;, 
     SPHEROID[&quot;WGS_1984&quot;, 6378137.0, 298.257223563]], 
@@ -39,6 +68,7 @@
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
+  <advertised>true</advertised>
   <metadata>
     <entry key="cachingEnabled">false</entry>
   </metadata>
