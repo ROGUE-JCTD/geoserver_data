@@ -17,7 +17,7 @@
   <identifiers>
     <Identifier>
       <authority>GEOGIT_ENTRY_POINT</authority>
-      <identifier>geonode:copeco_td_repo:master</identifier>
+      <identifier>geonode:copeco_td_repo:incendio:master</identifier>
     </Identifier>
   </identifiers>
 </layer>

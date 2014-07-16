@@ -2,5 +2,4 @@
   <id>-745c476c:13baf953e7a:-7ff2</id>
   <name>exception</name>
   <className>org.geoserver.security.filter.GeoServerExceptionTranslationFilter</className>
-  <accessDeniedErrorPage>/accessDenied.jsp</accessDeniedErrorPage>
 </exceptionTranslation>

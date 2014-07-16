@@ -3,24 +3,50 @@
   <enabled>true</enabled>
   <name>geonode:osm_od2_roads</name>
   <mimeFormats>
-    <string>image/jpeg</string>
     <string>image/png</string>
+    <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
       <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>-9780886.385872724</double>
+          <double>1567097.5950653367</double>
+          <double>-9668546.036101688</double>
+          <double>1648130.5612845465</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:4326</gridSetName>
+      <extent>
+        <coords>
+          <double>-87.86319732666016</double>
+          <double>13.93794059753418</double>
+          <double>-86.8540267944336</double>
+          <double>14.643342018127441</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:3857</gridSetName>
+      <extent>
+        <coords>
+          <double>-9780886.385872724</double>
+          <double>1567097.5950653367</double>
+          <double>-9668546.036101688</double>
+          <double>1648130.5612845465</double>
+        </coords>
+      </extent>
     </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
     <int>4</int>
     <int>4</int>
   </metaWidthHeight>
+  <expireCache>0</expireCache>
+  <expireClients>0</expireClients>
   <parameterFilters>
     <styleParameterFilter>
       <key>STYLES</key>

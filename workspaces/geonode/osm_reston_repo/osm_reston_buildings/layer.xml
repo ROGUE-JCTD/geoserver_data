@@ -17,7 +17,7 @@
   <identifiers>
     <Identifier>
       <authority>GEOGIT_ENTRY_POINT</authority>
-      <identifier>geonode:osm_reston_repo:master</identifier>
+      <identifier>geonode:osm_reston_repo:osm_buildings:master</identifier>
     </Identifier>
   </identifiers>
 </layer>

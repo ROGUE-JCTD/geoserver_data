@@ -17,7 +17,7 @@
   <identifiers>
     <Identifier>
       <authority>GEOGIT_ENTRY_POINT</authority>
-      <identifier>geonode:geom_types_repo:master</identifier>
+      <identifier>geonode:geom_types_repo:polygon_test:master</identifier>
     </Identifier>
   </identifiers>
 </layer>

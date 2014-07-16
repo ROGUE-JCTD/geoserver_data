@@ -3,12 +3,23 @@
   <enabled>true</enabled>
   <name>geonode:osm_tegu_buildings</name>
   <mimeFormats>
-    <string>image/png</string>
     <string>image/jpeg</string>
+    <string>image/png</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
       <gridSetName>EPSG:3857</gridSetName>
+      <extent>
+        <coords>
+          <double>-9718099.31223865</double>
+          <double>1579156.4414073757</double>
+          <double>-9701101.415748658</double>
+          <double>1591385.8146940593</double>
+        </coords>
+      </extent>
+    </gridSubset>
+    <gridSubset>
+      <gridSetName>EPSG:900913</gridSetName>
       <extent>
         <coords>
           <double>-9718099.31223865</double>
@@ -29,22 +40,13 @@
         </coords>
       </extent>
     </gridSubset>
-    <gridSubset>
-      <gridSetName>EPSG:900913</gridSetName>
-      <extent>
-        <coords>
-          <double>-9718099.31223865</double>
-          <double>1579156.4414073757</double>
-          <double>-9701101.415748658</double>
-          <double>1591385.8146940593</double>
-        </coords>
-      </extent>
-    </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
     <int>4</int>
     <int>4</int>
   </metaWidthHeight>
+  <expireCache>0</expireCache>
+  <expireClients>0</expireClients>
   <parameterFilters>
     <styleParameterFilter>
       <key>STYLES</key>

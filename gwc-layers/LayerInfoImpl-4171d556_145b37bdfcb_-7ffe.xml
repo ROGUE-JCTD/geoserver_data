@@ -3,23 +3,12 @@
   <enabled>true</enabled>
   <name>geonode:osm_reston_buildings</name>
   <mimeFormats>
-    <string>image/png</string>
     <string>image/jpeg</string>
+    <string>image/png</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
       <gridSetName>EPSG:900913</gridSetName>
-      <extent>
-        <coords>
-          <double>-8613884.056528797</double>
-          <double>4715160.305935752</double>
-          <double>-8609986.617386566</double>
-          <double>4717111.608443363</double>
-        </coords>
-      </extent>
-    </gridSubset>
-    <gridSubset>
-      <gridSetName>EPSG:3857</gridSetName>
       <extent>
         <coords>
           <double>-8613884.056528797</double>
@@ -40,11 +29,24 @@
         </coords>
       </extent>
     </gridSubset>
+    <gridSubset>
+      <gridSetName>EPSG:3857</gridSetName>
+      <extent>
+        <coords>
+          <double>-8613884.056528797</double>
+          <double>4715160.305935752</double>
+          <double>-8609986.617386566</double>
+          <double>4717111.608443363</double>
+        </coords>
+      </extent>
+    </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
     <int>4</int>
     <int>4</int>
   </metaWidthHeight>
+  <expireCache>0</expireCache>
+  <expireClients>0</expireClients>
   <parameterFilters>
     <styleParameterFilter>
       <key>STYLES</key>
