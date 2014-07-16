@@ -36,6 +36,8 @@ This is a description of your Web Map Server.
     <transparency>0</transparency>
   </watermark>
   <interpolation>Nearest</interpolation>
+  <getFeatureInfoMimeTypeCheckingEnabled>false</getFeatureInfoMimeTypeCheckingEnabled>
+  <getMapMimeTypeCheckingEnabled>false</getMapMimeTypeCheckingEnabled>
   <authorityURLs>
     <AuthorityURL>
       <name>GEOGIT_ENTRY_POINT</name>

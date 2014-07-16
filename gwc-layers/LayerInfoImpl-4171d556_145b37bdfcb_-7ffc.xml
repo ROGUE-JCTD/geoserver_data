@@ -3,8 +3,8 @@
   <enabled>true</enabled>
   <name>geonode:osm_reston_roads</name>
   <mimeFormats>
-    <string>image/jpeg</string>
     <string>image/png</string>
+    <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>

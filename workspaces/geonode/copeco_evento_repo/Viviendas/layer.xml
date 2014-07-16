@@ -9,6 +9,7 @@
     <id>FeatureTypeInfoImpl--6c974c2f:14427ba6cfa:-7ff7</id>
   </resource>
   <queryable>true</queryable>
+  <opaque>false</opaque>
   <attribution>
     <title>admin</title>
     <logoWidth>0</logoWidth>
