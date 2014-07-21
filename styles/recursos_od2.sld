@@ -10,12 +10,18 @@
       <FeatureTypeStyle>
         
         <Rule>
-          <Title>Letrina</Title>
-            <Filter xmlns="http://www.opengis.net/ogc">
+          <Title>Letrina - Abierto</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>  
               <PropertyIsEqualTo>
                 <PropertyName>tipo</PropertyName>
                 <Literal>letrina</Literal>
               </PropertyIsEqualTo>
+              <PropertyIsEqualTo>
+                <PropertyName>estado_de_la_capacidad</PropertyName>
+                <Literal>abierto</Literal>
+              </PropertyIsEqualTo> 
+            </And>
           </Filter>
           <PointSymbolizer>
             <Graphic>
@@ -26,14 +32,43 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
+        <Rule>
+          <Title>Letrina - Cerrado</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <And>  
+              <PropertyIsEqualTo>
+                <PropertyName>tipo</PropertyName>
+                <Literal>letrina</Literal>
+              </PropertyIsEqualTo>
+              <PropertyIsEqualTo>
+                <PropertyName>estado_de_la_capacidad</PropertyName>
+                <Literal>cerrado</Literal>
+              </PropertyIsEqualTo> 
+            </And>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="file://../rogue_symbols/wash_latrine_cabin_20px_red.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
         
         <Rule>
-          <Title>Comida</Title>
+          <Title>Comida - Abierto</Title>
             <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
                 <PropertyIsEqualTo>
                   <PropertyName>tipo</PropertyName>
                   <Literal>comida</Literal>
                 </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>abierto</Literal>
+                </PropertyIsEqualTo> 
+              </And>
             </Filter>
              <PointSymbolizer>
                <Graphic>
@@ -44,14 +79,43 @@
                </Graphic>
              </PointSymbolizer>
         </Rule>
+        <Rule>
+          <Title>Comida - Cerrado</Title>
+            <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
+                <PropertyIsEqualTo>
+                  <PropertyName>tipo</PropertyName>
+                  <Literal>comida</Literal>
+                </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>cerrado</Literal>
+                </PropertyIsEqualTo> 
+              </And>
+            </Filter>
+             <PointSymbolizer>
+               <Graphic>
+                 <ExternalGraphic>
+                   <OnlineResource xlink:href="file://../rogue_symbols/cluster_food_security_20px_red.png" xlink:type="simple"/>
+                   <Format>image/png</Format>
+                 </ExternalGraphic>
+               </Graphic>
+             </PointSymbolizer>
+        </Rule>
                 
         <Rule>
-          <Title>Agua</Title>
+          <Title>Agua - Abierto</Title>
             <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
                 <PropertyIsEqualTo>
                   <PropertyName>tipo</PropertyName>
                   <Literal>agua</Literal>
                 </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>abierto</Literal>
+                </PropertyIsEqualTo> 
+              </And>
             </Filter>
              <PointSymbolizer>
                <Graphic>
@@ -62,14 +126,43 @@
                </Graphic>
              </PointSymbolizer>
         </Rule>
+        <Rule>
+          <Title>Agua - Cerrado</Title>
+            <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
+                <PropertyIsEqualTo>
+                  <PropertyName>tipo</PropertyName>
+                  <Literal>agua</Literal>
+                </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>cerrado</Literal>
+                </PropertyIsEqualTo> 
+              </And>
+            </Filter>
+             <PointSymbolizer>
+               <Graphic>
+                 <ExternalGraphic>
+                   <OnlineResource xlink:href="file://../rogue_symbols/cluster_WASH_20px_red.png" xlink:type="simple"/>
+                   <Format>image/png</Format>
+                 </ExternalGraphic>
+               </Graphic>
+             </PointSymbolizer>
+        </Rule>
                 
         <Rule>
-          <Title>Refugio</Title>
+          <Title>Refugio - Abierto</Title>
             <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
                 <PropertyIsEqualTo>
                   <PropertyName>tipo</PropertyName>
                   <Literal>refugio</Literal>
                 </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>abierto</Literal>
+                </PropertyIsEqualTo> 
+              </And>
             </Filter>
              <PointSymbolizer>
                <Graphic>
@@ -80,19 +173,71 @@
                </Graphic>
              </PointSymbolizer>
         </Rule>
+        <Rule>
+          <Title>Refugio - Cerrado</Title>
+            <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
+                <PropertyIsEqualTo>
+                  <PropertyName>tipo</PropertyName>
+                  <Literal>refugio</Literal>
+                </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>cerrado</Literal>
+                </PropertyIsEqualTo> 
+              </And>
+            </Filter>
+             <PointSymbolizer>
+               <Graphic>
+                 <ExternalGraphic>
+                   <OnlineResource xlink:href="file://../rogue_symbols/cluster_CCCM_20px_red.png" xlink:type="simple"/>
+                   <Format>image/png</Format>
+                 </ExternalGraphic>
+               </Graphic>
+             </PointSymbolizer>
+        </Rule>
                 
         <Rule>
-          <Title>Otro</Title>
+          <Title>Otro - Abierto</Title>
             <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
                 <PropertyIsEqualTo>
                   <PropertyName>tipo</PropertyName>
                   <Literal>otro</Literal>
                 </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>abierto</Literal>
+                </PropertyIsEqualTo>
+              </And>
             </Filter>
              <PointSymbolizer>
                <Graphic>
                  <ExternalGraphic>
                    <OnlineResource xlink:href="file://../rogue_symbols/activity_reporting_20px.png" xlink:type="simple"/>
+                   <Format>image/png</Format>
+                 </ExternalGraphic>
+               </Graphic>
+             </PointSymbolizer>
+        </Rule>
+        <Rule>
+          <Title>Otro - Cerrado</Title>
+            <Filter xmlns="http://www.opengis.net/ogc">
+              <And>
+                <PropertyIsEqualTo>
+                  <PropertyName>tipo</PropertyName>
+                  <Literal>otro</Literal>
+                </PropertyIsEqualTo>
+                <PropertyIsEqualTo>
+                  <PropertyName>estado_de_la_capacidad</PropertyName>
+                  <Literal>cerrado</Literal>
+                </PropertyIsEqualTo>
+              </And>
+            </Filter>
+             <PointSymbolizer>
+               <Graphic>
+                 <ExternalGraphic>
+                   <OnlineResource xlink:href="file://../rogue_symbols/activity_reporting_20px_red.png" xlink:type="simple"/>
                    <Format>image/png</Format>
                  </ExternalGraphic>
                </Graphic>
