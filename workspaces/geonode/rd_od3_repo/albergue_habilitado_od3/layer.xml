@@ -1,0 +1,21 @@
+<layer>
+  <name>albergue_habilitado_od3</name>
+  <id>LayerInfoImpl-4377bd7f:1475a617800:-7fff</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-4377bd7f:1475a617800:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4377bd7f:1475a617800:-8000</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIT_ENTRY_POINT</authority>
+      <identifier>geonode:rd_od3_repo:albergue_habilitado_od3:master</identifier>
+    </Identifier>
+  </identifiers>
+</layer>
