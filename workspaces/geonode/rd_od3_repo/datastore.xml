@@ -1,0 +1,17 @@
+<dataStore>
+  <id>DataStoreInfoImpl-66f6dfbd:1475986c5da:-8000</id>
+  <name>rd_od3_repo</name>
+  <description>rd_od3_repo</description>
+  <type>GeoGIT</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-78ff667e:12476299803:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="geogit_repository">/var/lib/geoserver_data/geogit/rd_od3_repo</entry>
+    <entry key="branch">master</entry>
+    <entry key="create">false</entry>
+    <entry key="namespace">http://www.geonode.org/</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>
