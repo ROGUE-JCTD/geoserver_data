@@ -42,13 +42,14 @@
           <xsd:element maxOccurs="1" minOccurs="0" name="quien_reporta" nillable="true" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="institucion" nillable="true" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="cargo" nillable="true" type="xsd:string"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="contacto_tele" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="contacto_telefono" nillable="true" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="contacto_email" nillable="true" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="provincia" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
                 <xsd:enumeration value="Azua"/>
                 <xsd:enumeration value="Bahoruco"/>
+                <xsd:enumeration value="Barahona"/>
                 <xsd:enumeration value="Dajabon"/>
                 <xsd:enumeration value="Distrito Nacional"/>
                 <xsd:enumeration value="Duarte"/>
@@ -63,7 +64,7 @@
                 <xsd:enumeration value="La Vega"/>
                 <xsd:enumeration value="Maria Trinidad Sanchez"/>
                 <xsd:enumeration value="Monsenor Nouel"/>
-                <xsd:enumeration value="Monte Cristi"/>
+                <xsd:enumeration value="Montecristi"/>
                 <xsd:enumeration value="Monte Plata"/>
                 <xsd:enumeration value="Pedernales"/>
                 <xsd:enumeration value="Peravia"/>
@@ -71,7 +72,7 @@
                 <xsd:enumeration value="Samana"/>
                 <xsd:enumeration value="San Cristobal"/>
                 <xsd:enumeration value="San Jose de Ocoa"/>
-                <xsd:enumeration value="San Juan"/>
+                <xsd:enumeration value="San Juan de la Maguana"/>
                 <xsd:enumeration value="San Pedro de Macoris"/>
                 <xsd:enumeration value="Sanchez Ramirez"/>
                 <xsd:enumeration value="Santiago"/>
@@ -84,7 +85,7 @@
           <xsd:element maxOccurs="1" minOccurs="0" name="municipio_o_distrito" nillable="true" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="comunidad_o_barrio" nillable="true" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="accesso" nillable="true" type="xsd:string"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="accesso_por_carretera" nillable="true">
+          <xsd:element maxOccurs="1" minOccurs="0" name="accesso_por_carretera_vehiculo_4x4" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
                 <xsd:enumeration value="si"/>
@@ -92,7 +93,7 @@
               </xsd:restriction>
             </xsd:simpleType>
           </xsd:element>
-          <xsd:element maxOccurs="1" minOccurs="0" name="accesso_por_rio_o_mar" nillable="true">
+          <xsd:element maxOccurs="1" minOccurs="0" name="accesso_por_rio_o_mar_barco" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
                 <xsd:enumeration value="si"/>
@@ -100,7 +101,7 @@
               </xsd:restriction>
             </xsd:simpleType>
           </xsd:element>
-          <xsd:element maxOccurs="1" minOccurs="0" name="accesso_por_aire" nillable="true">
+          <xsd:element maxOccurs="1" minOccurs="0" name="accesso_por_aire_helicoptero" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
                 <xsd:enumeration value="si"/>
@@ -108,7 +109,7 @@
               </xsd:restriction>
             </xsd:simpleType>
           </xsd:element>
-          <xsd:element maxOccurs="1" minOccurs="0" name="via_de_accesso_recommenda" nillable="true">
+          <xsd:element maxOccurs="1" minOccurs="0" name="via_de_accesso_recommendada" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
                 <xsd:enumeration value="aerae"/>
@@ -134,7 +135,7 @@
           </xsd:element>
           <xsd:element maxOccurs="1" minOccurs="0" name="efectos_adversos" nillable="true" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="poblacion_salud" nillable="true" type="xsd:string"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="personas_viven_localidad_antes" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="poblacion_aprox_antes_del_evento" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="personas_evacuadadas_desplazadas" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
@@ -147,19 +148,19 @@
           </xsd:element>
           <xsd:element maxOccurs="1" minOccurs="0" name="numero_heridos" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="numero_muertos" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="numero_desaparecidas" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="numero_atrapadas" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="numero_aisladas" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_desaparecidos" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_atrapados" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_aislados" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="lineas_vitales" nillable="true" type="xsd:string"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="transporte_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="transporte_carreteras_puentes_otros" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="transporte_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="transporte_parcial" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="transporte_funcionan_parcial" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="transporte_no_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="agua_potable_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="agua_potable_pozos_acueductos_total" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="agua_potable_funcionan" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="agua_potable_parcial" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="agua_portable_no_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="alcantarillado_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="alcantarillado_sanitario_pluvial_total" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="alcantarillado_funcionan" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="alcantarillado_parcial" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="alcantarillado_no_funcionan" nillable="true" type="xsd:int"/>
@@ -167,7 +168,7 @@
           <xsd:element maxOccurs="1" minOccurs="0" name="energia_electrica_funcionan" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="energia_electrica_parcial" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="energia_electrica_no_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="telefonos_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="telefonos_flips_total" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="telefonos_funcionan" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="telefonos_parcial" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="telefonos_no_funcionan" nillable="true" type="xsd:int"/>
@@ -175,20 +176,20 @@
           <xsd:element maxOccurs="1" minOccurs="0" name="cellulares_funcionan" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="cellulares_parcial" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="cellulares_no_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="radio_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="radio_UHF_VHF_total" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="radio_funcionan" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="radio_parcial" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="radio_no_funcionan" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="servicios" nillable="true" type="xsd:string"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="salud_total" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="salud_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="salud_parcial" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="salud_no_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="escolares_total" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="escolares_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="escolares_parcial" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="escolares_no_funcionan" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="numero_viviendas_todos" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_de_salud_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_de_salud_funcionan" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_de_salud_parcial" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_de_salud_no_funcionan" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_escolares_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_escolares_funcionan" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_escolares_parcial" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="centros_escolares_no_funcionan" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_viviendas_total" nillable="true" type="xsd:int"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="viviendas_danadas" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
@@ -209,9 +210,9 @@
               </xsd:restriction>
             </xsd:simpleType>
           </xsd:element>
-          <xsd:element maxOccurs="1" minOccurs="0" name="numero_albergues_totales_habilitados" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="numero_personas_albergues" nillable="true" type="xsd:int"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="infraestructura_productiva_primero" nillable="true">
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_albergues_habilitados_total" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_personas_en_albergues" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="infraestructura_productiva_primaro" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
                 <xsd:enumeration value="no_hay"/>
@@ -221,7 +222,7 @@
               </xsd:restriction>
             </xsd:simpleType>
           </xsd:element>
-          <xsd:element maxOccurs="1" minOccurs="0" name="infraestructura_productiva_secondario" nillable="true">
+          <xsd:element maxOccurs="1" minOccurs="0" name="infraestructura_productiva_secundario" nillable="true">
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
                 <xsd:enumeration value="no_hay"/>
@@ -268,3 +269,4 @@
   </xsd:complexType>
   <xsd:element name="edan_preliminar_od3" substitutionGroup="gml:_Feature" type="geonode:edan_preliminar_od3Type"/>
 </xsd:schema>
+
