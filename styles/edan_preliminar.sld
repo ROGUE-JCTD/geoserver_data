@@ -8,7 +8,20 @@
     <Name>edan_preliminar</Name>
     <UserStyle>
       <FeatureTypeStyle>
-        
+	<Rule>
+          <Title>Zona</Title>
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#FF7D40</CssParameter>
+              <CssParameter name="opacity">0.3</CssParameter>
+            </Fill>
+            <Stroke>
+              <CssParameter name="stroke">#87421F</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="opacity">0.5</CssParameter>
+            </Stroke>
+          </PolygonSymbolizer>
+        </Rule>        
         <Rule>
           <Title>Huracan</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
