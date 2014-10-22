@@ -52,7 +52,7 @@ def run(features, attributeName):
         stats['totalCount'] += 1
         val = f.attributes[attributeName]
 
-        if val in stats['uniqueValues']:
+        if str(val) in stats['uniqueValues']:
             stats['uniqueValues'][str(val)] += 1
         else:
             stats['uniqueValues'][str(val)] = 1
