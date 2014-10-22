@@ -36,7 +36,7 @@ def run(features, attributeName):
     #  mean: 72.6165,
     #  median: 74.2404,
     #  stdDev: 15.324,
-    #  coefficient: 0.0123
+    #  variance: 0.0123
     #}
     ds = DescriptiveStatistics()
     ss = SummaryStatistics()
@@ -48,28 +48,28 @@ def run(features, attributeName):
         'uniqueValues': {}
     }
 
-    field_type_is_number = True
-
     for f in features.features():
         stats['totalCount'] += 1
         val = f.attributes[attributeName]
 
         if val in stats['uniqueValues']:
-            stats['uniqueValues'][val] += 1
+            stats['uniqueValues'][str(val)] += 1
         else:
-            stats['uniqueValues'][val] = 1
+            stats['uniqueValues'][str(val)] = 1
 
         if val is not None and val != '':
             stats['populatedCount'] += 1
-
             try:
                 val_float = float(val)
                 ds.addValue(val_float)
                 ss.addValue(val_float)
             except ValueError:
-                field_type_is_number = False
+                stats['type'] = 'string'
+            except:
+                # might be a date object
+                stats['type'] = 'string'                    
 
-    if field_type_is_number is True:
+    if stats['type'] == 'number':
         stats['min'] = ss.getMin()
         stats['max'] = ss.getMax()
         stats['range'] = stats['max'] - stats['min']
@@ -77,7 +77,6 @@ def run(features, attributeName):
         stats['mean'] = ss.getMean()
         stats['median'] = ds.getPercentile(50)
         stats['stdDev'] = ds.getStandardDeviation()
-    else:
-        stats['type'] = 'string'
+        stats['variance'] = ss.getPopulationVariance()
 
     return json.dumps(stats)
