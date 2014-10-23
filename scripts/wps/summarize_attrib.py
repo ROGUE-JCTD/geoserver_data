@@ -78,5 +78,7 @@ def run(features, attributeName):
         stats['median'] = ds.getPercentile(50)
         stats['stdDev'] = ds.getStandardDeviation()
         stats['variance'] = ss.getPopulationVariance()
+    
+    stats['uniqueValueCount'] = len(stats['uniqueValues'])
 
     return json.dumps(stats)
