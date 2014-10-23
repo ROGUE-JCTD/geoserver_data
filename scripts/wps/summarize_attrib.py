@@ -6,6 +6,7 @@ from java.lang import String
 from org.apache.commons.math3.stat.descriptive import DescriptiveStatistics
 from org.apache.commons.math3.stat.descriptive import SummaryStatistics
 import simplejson as json
+import math
 
 @process(
     title = 'Summarize Attribute Values',
@@ -70,15 +71,16 @@ def run(features, attributeName):
                 stats['type'] = 'string'                    
 
     if stats['type'] == 'number':
-        stats['min'] = ss.getMin()
-        stats['max'] = ss.getMax()
-        stats['range'] = stats['max'] - stats['min']
-        stats['sum'] = ss.getSum()
-        stats['mean'] = ss.getMean()
-        stats['median'] = ds.getPercentile(50)
-        stats['stdDev'] = ds.getStandardDeviation()
-        stats['variance'] = ss.getPopulationVariance()
+        if ss.getN():
+            stats['min'] = ss.getMin()
+            stats['max'] = ss.getMax()
+            stats['range'] = stats['max'] - stats['min']
+            stats['sum'] = ss.getSum()
+            stats['mean'] = ss.getMean()
+            stats['median'] = ds.getPercentile(50)
+            stats['stdDev'] = ds.getStandardDeviation()
+            stats['variance'] = ss.getPopulationVariance()
     
     stats['uniqueValueCount'] = len(stats['uniqueValues'])
-
-    return json.dumps(stats)
+        
+    return json.dumps(stats, allow_nan=False)
