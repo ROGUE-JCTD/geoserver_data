@@ -1,14 +1,5 @@
 <global>
-  <settings>
-    <id>SettingsInfoImpl-6c75f525:14422fe66bb:-8000</id>
-    <contact/>
-    <charset>UTF-8</charset>
-    <numDecimals>8</numDecimals>
-    <onlineResource>http://geoserver.org</onlineResource>
-    <verbose>false</verbose>
-    <verboseExceptions>false</verboseExceptions>
-    <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
-  </settings>
+  <contact/>
   <jai>
     <allowInterpolation>false</allowInterpolation>
     <recycling>true</recycling>
@@ -21,16 +12,11 @@
     <jpegAcceleration>false</jpegAcceleration>
     <allowNativeMosaic>false</allowNativeMosaic>
   </jai>
-  <coverageAccess>
-    <maxPoolSize>5</maxPoolSize>
-    <corePoolSize>5</corePoolSize>
-    <keepAliveTime>30000</keepAliveTime>
-    <queueType>UNBOUNDED</queueType>
-    <imageIOCacheThreshold>10240</imageIOCacheThreshold>
-  </coverageAccess>
-  <updateSequence>1859</updateSequence>
-  <featureTypeCacheSize>0</featureTypeCacheSize>
-  <globalServices>true</globalServices>
-  <xmlPostRequestLogBufferSize>1024</xmlPostRequestLogBufferSize>
+  <charset>UTF-8</charset>
+  <numDecimals>8</numDecimals>
+  <onlineResource>http://geoserver.org</onlineResource>
+  <verbose>false</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <updateSequence>0</updateSequence>
   <resourceErrorHandling>SKIP_MISCONFIGURED_LAYERS</resourceErrorHandling>
 </global>

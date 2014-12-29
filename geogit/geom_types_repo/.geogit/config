@@ -1,9 +1,0 @@
-[storage]
-refs = file
-objects = bdbje
-staging = bdbje
-graph = bdbje
-[file]
-version = 1.0
-[bdbje]
-version = 0.1
