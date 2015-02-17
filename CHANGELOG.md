@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 [Unreleased][unreleased]
 ------------------------
+- Update password policies to require uppercase characters, lowercase characters, numerics and be at least 12 characters in length.
 - Adds CHANGELOG.md.
 
 [1.1] - 2015-01-19
