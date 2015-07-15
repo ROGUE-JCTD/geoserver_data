@@ -1,0 +1,17 @@
+<dataStore>
+  <id>DataStoreInfoImpl--3273fc01:14e8a7c6846:-8000</id>
+  <name>od3_repo</name>
+  <description>od3_repo</description>
+  <type>GeoGIG</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-78ff667e:12476299803:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="geogig_repository">892d8209-338b-4b7b-86dd-0232b88a4eb2</entry>
+    <entry key="branch">master</entry>
+    <entry key="resolver">org.geogig.geoserver.config.GeoServerStoreRepositoryResolver</entry>
+    <entry key="namespace">http://www.geonode.org/</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

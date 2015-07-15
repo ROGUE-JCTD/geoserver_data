@@ -1,0 +1,21 @@
+<layer>
+  <name>incidentes_od3</name>
+  <id>LayerInfoImpl--3273fc01:14e8a7c6846:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3273fc01:14e8a7c6846:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3273fc01:14e8a7c6846:-7ffe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <identifiers>
+    <Identifier>
+      <authority>GEOGIG_ENTRY_POINT</authority>
+      <identifier>892d8209-338b-4b7b-86dd-0232b88a4eb2:incidentes_od3:master</identifier>
+    </Identifier>
+  </identifiers>
+</layer>

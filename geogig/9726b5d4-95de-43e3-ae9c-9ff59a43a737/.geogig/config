@@ -1,0 +1,16 @@
+[bdbje]
+version = 0.2
+[file]
+version = 1.0
+[storage]
+graph = bdbje
+objects = bdbje
+refs = file
+[branches\master]
+remote = origin
+merge = refs/heads/master
+[remote\dev]
+url = https://dev.geoshape.org/geoserver/geogig/9726b5d4-95de-43e3-ae9c-9ff59a43a737
+fetch = +refs/heads/*:refs/remotes/dev/*
+username = admin
+password = mY0XhSxmU6YNCrk5kZUySw==
