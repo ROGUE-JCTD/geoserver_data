@@ -1,12 +1,12 @@
 <layer>
-  <name>incidentes_od3</name>
-  <id>LayerInfoImpl-7ec63990:1569c28f3ed:-7ffd</id>
+  <name>edan_preliminar_od3</name>
+  <id>LayerInfoImpl-7ec63990:1569c28f3ed:-7ff3</id>
   <type>VECTOR</type>
   <defaultStyle>
-    <id>StyleInfoImpl-78ff667e:12476299803:-7ff9</id>
+    <id>StyleInfoImpl-78ff667e:12476299803:-7ffa</id>
   </defaultStyle>
   <resource class="featureType">
-    <id>FeatureTypeInfoImpl-7ec63990:1569c28f3ed:-7ffe</id>
+    <id>FeatureTypeInfoImpl-7ec63990:1569c28f3ed:-7ff4</id>
   </resource>
   <attribution>
     <logoWidth>0</logoWidth>
@@ -15,7 +15,7 @@
   <identifiers>
     <Identifier>
       <authority>GEOGIG_ENTRY_POINT</authority>
-      <identifier>geoserver://9726b5d4-95de-43e3-ae9c-9ff59a43a737:incidentes_od3</identifier>
+      <identifier>geoserver://9726b5d4-95de-43e3-ae9c-9ff59a43a737:edan_preliminar_od3</identifier>
     </Identifier>
   </identifiers>
 </layer>

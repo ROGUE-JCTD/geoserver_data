@@ -1,15 +1,14 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-7ec63990:1569c28f3ed:-7ffe</id>
-  <name>incidentes_od3</name>
-  <nativeName>incidentes_od3</nativeName>
+  <id>FeatureTypeInfoImpl-7ec63990:1569c28f3ed:-7ff6</id>
+  <name>albergue_habilitado_od3</name>
+  <nativeName>albergue_habilitado_od3</nativeName>
   <namespace>
     <id>NamespaceInfoImpl-78ff667e:12476299803:-7ffe</id>
   </namespace>
-  <title>incidentes_od3</title>
-  <abstract>No abstract provided</abstract>
+  <title>albergue_habilitado_od3</title>
   <keywords>
     <string>features</string>
-    <string>incidentes_od3</string>
+    <string>albergue_habilitado_od3</string>
   </keywords>
   <nativeCRS>GEOGCS[&quot;WGS 84&quot;, 
   DATUM[&quot;World Geodetic System 1984&quot;, 
@@ -26,7 +25,6 @@
     <maxx>180.0</maxx>
     <miny>-90.0</miny>
     <maxy>90.0</maxy>
-    <crs>EPSG:4326</crs>
   </nativeBoundingBox>
   <latLonBoundingBox>
     <minx>-180.0</minx>
@@ -43,7 +41,6 @@
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
-  <advertised>true</advertised>
   <store class="dataStore">
     <id>DataStoreInfoImpl-7ec63990:1569c28f3ed:-7fff</id>
   </store>
