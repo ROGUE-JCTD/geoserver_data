@@ -19,13 +19,7 @@
     <filters name="webLogout" class="org.geoserver.security.LogoutFilterChain" path="/j_spring_security_logout,/j_spring_security_logout/" disabled="false" allowSessionCreation="true" ssl="false" matchHTTPMethod="false">
       <filter>formLogout</filter>
     </filters>
-    <filters name="geogig" class="org.geoserver.security.ServiceLoginFilterChain" interceptorName="restInterceptor" exceptionTranslationName="exception" path="/geogig**,/geogig/**" disabled="false" allowSessionCreation="false" ssl="false" matchHTTPMethod="false">
-      <filter>geonodeCookieFilter</filter>
-      <filter>basic</filter>
-      <filter>geonodeAnonymousFilter</filter>
-      <filter>anonymous</filter>
-    </filters>
-    <filters name="rest" class="org.geoserver.security.ServiceLoginFilterChain" interceptorName="restInterceptor" exceptionTranslationName="exception" path="/rest/**" disabled="false" allowSessionCreation="false" ssl="false" matchHTTPMethod="false">
+    <filters name="rest" class="org.geoserver.security.ServiceLoginFilterChain" interceptorName="restInterceptor" exceptionTranslationName="exception" path="/rest/**,/geogig/**" disabled="false" allowSessionCreation="false" ssl="false" matchHTTPMethod="false">
       <filter>geonodeCookieFilter</filter>
       <filter>basic</filter>
       <filter>geonodeAnonymousFilter</filter>

@@ -2,9 +2,9 @@
   <id>-54fbcd7b:1402c24f6bc:-7ffa</id>
   <name>master</name>
   <className>org.geoserver.security.validation.PasswordValidatorImpl</className>
-  <uppercaseRequired>true</uppercaseRequired>
-  <lowercaseRequired>true</lowercaseRequired>
-  <digitRequired>true</digitRequired>
-  <minLength>12</minLength>
+  <uppercaseRequired>false</uppercaseRequired>
+  <lowercaseRequired>false</lowercaseRequired>
+  <digitRequired>false</digitRequired>
+  <minLength>8</minLength>
   <maxLength>-1</maxLength>
 </passwordPolicy>
